@@ -6,7 +6,7 @@ export type ActionResult =
   | { success: true; message: string }
   | { success: false; error: string }
 
-const BACKEND_URL = process.env.ORDERSTACK_API_URL ?? 'https://get-order-stack-restaurant-api.onrender.com'
+const BACKEND_URL = process.env.ORDERSTACK_API_URL ?? 'https://get-order-stack-restaurant-backend.onrender.com'
 
 export async function sendContactEmail(data: ContactFormData): Promise<ActionResult> {
   const parsed = contactSchema.safeParse(data)
