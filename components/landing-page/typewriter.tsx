@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const words = ["Efficiency", "Automation", "Revenue", "Growth"];
+interface TypewriterProps {
+  words: string[];
+}
 
-export default function Typewriter() {
+export default function Typewriter({ words }: TypewriterProps) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -14,10 +16,10 @@ export default function Typewriter() {
     }, 2200);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
-    <span className="">
+    <span>
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
@@ -25,7 +27,7 @@ export default function Typewriter() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -18 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="inline-block text-white text-[5.5rem]  leading-[0.95] font-black font-[var(--font-sora)] shadow-text"
+          className="inline-block text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text"
         >
           {words[index]}.
         </motion.span>
