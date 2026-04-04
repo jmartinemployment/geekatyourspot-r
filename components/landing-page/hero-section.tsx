@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { HeroDialog } from "@/app/home/HeroDialog";
-
+import { HeroDialog } from "@/components/landing-page/HeroDialog";
+import Typewriter from "./typewriter";
 export default function HeroSection() {
   return (
     <>
@@ -31,32 +30,34 @@ export default function HeroSection() {
           </Button>
         </div>
       </section> */}
-      <section className="home-hero d-none md:block w-full h-screen bg-[#03020d] min-h-screen">
-        <div className="grid grid-cols-2 content-center gap-4 items-center h-screen px-5">
+      <section className="home-hero d-none md:block w-full min-h-screen bg-[#0a0b26]">
+        <div className="grid grid-cols-2 content-center gap-4 items-center min-h-screen container">
           <div>
-            <h1 className="text-white">
-              {" "}
-              Your competitors are using AI.
+            <h1 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text-purple">
+              Reimagine Your
               <br />
-              <span className="text-[#6a4ed6]">Are you?</span>
+              <span className="text-[#660FB8] shadow-text-white">Business</span>
             </h1>
-            <p className="text-white py-4">
-              While you&apos;re still doing things the old way, your competitors
-              are automating workflows, generating leads 24/7, and making
-              data-driven decisions. Small businesses that embrace AI now will
-              dominate their markets. Those that don&apos;t will struggle to
-              keep up.
+            <br />
+            <Typewriter
+              words={["Efficiency", "Automation", "Revenue", "Growth"]}
+            />
+
+            <p className="text-white shadow-text-purple text-xl">
+              Design, build, and deploy AI systems. Streamline your workflows,
+              reduce errors, and scale without the headcount.
             </p>
             <HeroDialog />
           </div>
-          <div className="flex items-center h-screen">
+          <div className="flex items-center justify-center min-h-screen">
             <Image
-              src="/images/geek@yourSpot-1.jpeg"
+              src="/images/action-figure.jpeg"
               preload={true}
-              width={1070}
-              height={601}
+              width={450}
+              height={562}
               quality={100}
-              alt="Geek At Your Spot - AI-powered business transformation for small businesses"
+              alt="Geek At Your Spot - AI-created action figure of founder me, representing my hands-on, personalized approach to helping small businesses succeed with technology."
+              className="h-auto w-auto"
             />
           </div>
         </div>
