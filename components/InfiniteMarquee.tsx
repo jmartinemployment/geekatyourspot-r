@@ -33,7 +33,7 @@ export function InfiniteMarquee({
         {[...items, ...items].map((item, i) => (
           <div
             key={i}
-            className="bg-[#8C2703] px-10 py-5 rounded-sm border border-white/10 text-slate-300 font-bold tracking-wide flex items-center justify-center min-w-[220px] duration-300"
+            className="bg-[#023059] px-10 py-5 rounded-sm border border-white/10 text-white shadow-text font-bold tracking-wide flex items-center justify-center min-w-[220px] duration-300"
           >
             {item}
           </div>

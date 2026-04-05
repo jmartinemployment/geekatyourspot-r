@@ -1,5 +1,5 @@
 import HeroSection from "@/components/landing-page/hero-section";
-import CoreServicesSection from "@/components/landing-page/core-services";
+// import CoreServicesSection from "@/components/landing-page/core-services";
 import CloneYourselfSection from "@/components/landing-page/clone-yourself";
 import BuiltForIndustry from "@/components/landing-page/built-for-industry";
 import TheMethodologySection from "@/components/landing-page/the-methodology";
@@ -14,12 +14,13 @@ export default function Home() {
       <HeroSection />
       <CloneYourselfSection />
       <BuiltForIndustry />
-      <TheMethodologySection />
-      <CoreServicesSection />
       <SeamlessIntegrationsSection />
+      <TheMethodologySection />
+      <CTASection />
+  
       {/* <TrustBar /> */}
       {/* <AboutTeaserSection /> */}
-      <CTASection />
+      
     </>
   );
 }

@@ -32,7 +32,7 @@ export default function BuiltForIndustrySection() {
                 <h2 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
                   Built For
                   <br />
-                  <span className="text-[#C88347] text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
+                  <span className="text-[#024059] text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
                     Industry
                   </span>
                 </h2>
@@ -95,7 +95,7 @@ export default function BuiltForIndustrySection() {
                 value="Operations"
                 className="flex flex-col w-full h-auto"
               >
-                <Card className="w-[full] bg-[#C88347] shadow-box">
+                <Card className="w-[full] bg-[#024059] shadow-box">
                   <CardHeader className="space-y-0 gap-0 my-0 py-0">
                     <CardTitle className="">
                       <p>
@@ -120,7 +120,7 @@ export default function BuiltForIndustrySection() {
                 </Card>
               </TabsContent>
               <TabsContent value="Marketing">
-                <Card className="w-[full] bg-[#C88347] shadow-box">
+                <Card className="w-[full] bg-[#024059] shadow-box">
                   <CardHeader className="space-y-0 gap-0 my-0 py-0">
                     <CardTitle className="text-white font-bold">
                       <FontAwesomeIcon
@@ -143,7 +143,7 @@ export default function BuiltForIndustrySection() {
                 </Card>
               </TabsContent>
               <TabsContent value="Customer">
-                <Card className="w-[full] bg-[#C88347] shadow-box">
+                <Card className="w-[full] bg-[#024059] shadow-box">
                   <CardHeader className="space-y-0 gap-0 my-0 py-0">
                     <CardTitle className="text-white font-bold">
                       <FontAwesomeIcon
@@ -165,7 +165,7 @@ export default function BuiltForIndustrySection() {
                 </Card>
               </TabsContent>
               <TabsContent value="Finance">
-                <Card className="w-[full] bg-[#C88347] shadow-box">
+                <Card className="w-[full] bg-[#024059] shadow-box">
                   <CardHeader>
                     <CardTitle className="text-white font-bold">
                       <FontAwesomeIcon
@@ -187,7 +187,7 @@ export default function BuiltForIndustrySection() {
                 </Card>
               </TabsContent>
               <TabsContent value="Human">
-                <Card className="w-[full] bg-[#C88347] shadow-box">
+                <Card className="w-[full] bg-[#024059] shadow-box">
                   <CardHeader>
                     <CardTitle className="text-white font-bold">
                       <FontAwesomeIcon
@@ -209,7 +209,7 @@ export default function BuiltForIndustrySection() {
                 </Card>
               </TabsContent>
               <TabsContent value="Security">
-                <Card className="w-[full] bg-[#C88347] shadow-box">
+                <Card className="w-[full] bg-[#024059] shadow-box">
                   <CardHeader>
                     <CardTitle className="text-white font-bold">
                       <FontAwesomeIcon
