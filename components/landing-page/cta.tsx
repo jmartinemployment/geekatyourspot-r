@@ -34,13 +34,13 @@ export default function CTASection() {
           <div>
             <div className="flex items-center justify-center mx-auto h-screen">
               <div>
-                <h2 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] text-center">
-                  Ready to Reproduce
+                <h2 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] text-center shadow-text">
+                  Reproduce,
                   <br />
-                  <span className="text-[#371D14]">Yourself</span>?
+                  <span className="text-[#023059] shadow-text">Yourself?</span>
                 </h2>
 
-                <p className="text-white text-2xl font-bold shadow-text text-center mb-6">
+                <p className="text-white text-2xl shadow-text text-center mb-6">
                   Let&apos;s discuss how AI and smart technology can give you a
                   competitive edge.
                 </p>

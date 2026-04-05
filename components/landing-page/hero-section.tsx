@@ -30,20 +30,18 @@ export default function HeroSection() {
           </Button>
         </div>
       </section> */}
-      <section className="home-hero d-none md:block w-full min-h-screen bg-[#0a0b26]">
+      <section className="home-hero d-none md:block w-full min-h-screen bg-[#023059]">
         <div className="grid grid-cols-2 content-center gap-4 items-center min-h-screen container">
           <div>
-            <h1 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text-purple">
-              Reimagine Your
-              <br />
-              <span className="text-[#660FB8] shadow-text-white">Business</span>
+            <h1 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
+              Reimagine Your Business
             </h1>
             <br />
             <Typewriter
               words={["Efficiency", "Automation", "Revenue", "Growth"]}
             />
 
-            <p className="text-white shadow-text-purple text-xl">
+            <p className="text-white shadow-text text-xl pt-5">
               Design, build, and deploy AI systems. Streamline your workflows,
               reduce errors, and scale without the headcount.
             </p>

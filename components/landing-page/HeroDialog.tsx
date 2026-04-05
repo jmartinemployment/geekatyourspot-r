@@ -10,7 +10,7 @@ export function HeroDialog() {
   return (
     <>
       <Button
-        variant="purple"
+        className='bg-[#8C2703] mt-5 shadow-box shadow-text'
         size="lg"
         onClick={() => setOpen(true)}
       >

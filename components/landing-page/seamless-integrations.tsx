@@ -72,13 +72,13 @@ export default function SeamlessIntegrationsSection() {
     <>
       {/* <section>
     </section> */}
-      <section className="w-full bg-[#C88347] min-h-screen flex flex-col justify-center gap-12 py-16">
+      <section className="w-full bg-[#8C4E2A] min-h-screen flex flex-col justify-center gap-12 py-16">
         {/* Header */}
         <div className="text-center">
           <h2 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
             Seamless
             <br />
-            <span className="text-[#8C2703]  text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text inline">
+            <span className="text-[#023059]  text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text inline">
               Integrations
             </span>
           </h2>
