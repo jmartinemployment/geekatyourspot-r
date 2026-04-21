@@ -1,6 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { getFreeSlots } from '@/services/google-calendar.service'
 
+export const dynamic = 'force-dynamic'
+
 const SYSTEM_PROMPT = `You are a friendly assistant for Geek at Your Spot, an AI 
 consulting firm in South Florida. Your job is to qualify leads before showing 
 them the booking calendar.
