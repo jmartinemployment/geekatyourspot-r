@@ -12,7 +12,7 @@ function getCalendarClient() {
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: clientEmail,
-      private_key: privateKey.replace(/\\n/g, '\n'),
+      private_key: privateKey.includes('\\n') ? privateKey.replace(/\\n/g, '\n') : privateKey,
     },
     scopes: ['https://www.googleapis.com/auth/calendar'],
   })
