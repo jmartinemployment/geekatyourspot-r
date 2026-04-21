@@ -1,26 +1,26 @@
 import HeroSection from "@/components/landing-page/hero-section";
-// import CoreServicesSection from "@/components/landing-page/core-services";
 import CloneYourselfSection from "@/components/landing-page/clone-yourself";
-import BuiltForIndustry from "@/components/landing-page/built-for-industry";
 import TheMethodologySection from "@/components/landing-page/the-methodology";
-import SeamlessIntegrationsSection from "@/components/landing-page/seamless-integrations"
-// import WhatWeDoBestSection from "@/components/landing-page/what-we-do-best-section";
-// import AboutTeaserSection from "@/components/landing-page/about-teaser-section";
-import CTASection from "@/components/landing-page/cta";
+import SeamlessIntegrationsSection from "@/components/landing-page/seamless-integrations";
+import { Suspense } from "react";
+import type { Metadata } from "next";
+import { SchedulerShell } from "@/components/landing-page/scheduler/scheduler-shell";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Geek at Your Spot",
+  description:
+    "Get in touch with the Geek at Your Spot team. We help small businesses in South Florida implement AI.",
+};
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <CloneYourselfSection />
-      <BuiltForIndustry />
-      <SeamlessIntegrationsSection />
       <TheMethodologySection />
-      <CTASection />
-  
-      {/* <TrustBar /> */}
-      {/* <AboutTeaserSection /> */}
-      
+      <Suspense>
+        <SchedulerShell />
+      </Suspense>
     </>
   );
 }
