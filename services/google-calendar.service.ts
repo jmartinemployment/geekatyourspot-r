@@ -2,18 +2,23 @@ import { google } from 'googleapis'
 import type { TimeSlot, Booking, ContactInfo } from '@/components/landing-page/scheduler/state/types'
 
 function normalizePrivateKey(key: string): string {
-  // Case 1: literal \n sequences (dotenv / .env.local format)
-  if (key.includes('\\n')) return key.replace(/\\n/g, '\n');
-  // Case 2: already has real newlines (Vercel dashboard paste)
-  if (key.includes('\n')) return key;
-  // Case 3: Vercel CLI stripped all newlines — reformat PEM manually
-  const match = /-----BEGIN PRIVATE KEY-----([\s\S]+?)-----END PRIVATE KEY-----/.exec(key);
+  // Strip surrounding quotes accidentally included in env var value
+  key = key.replace(/^["']|["']$/g, '').trim()
+  // Convert literal \n sequences to real newlines (dotenv / .env.local format)
+  if (key.includes('\\n')) key = key.replace(/\\n/g, '\n')
+  // Strip carriage returns
+  key = key.replace(/\r/g, '')
+  // Always reconstruct PEM from scratch to guarantee correct formatting
+  const match = /-----BEGIN PRIVATE KEY-----([\s\S]*?)-----END PRIVATE KEY-----/.exec(key)
   if (match) {
-    const b64 = match[1].replace(/\s/g, '');
-    const lines = b64.match(/.{1,64}/g) ?? [];
-    return `-----BEGIN PRIVATE KEY-----\n${lines.join('\n')}\n-----END PRIVATE KEY-----\n`;
+    const b64 = match[1].replace(/[^A-Za-z0-9+/=]/g, '')
+    const lines = b64.match(/.{1,64}/g) ?? []
+    return `-----BEGIN PRIVATE KEY-----\n${lines.join('\n')}\n-----END PRIVATE KEY-----\n`
   }
-  return key;
+  // No PEM headers — treat entire value as raw base64 body
+  const b64 = key.replace(/[^A-Za-z0-9+/=]/g, '')
+  const lines = b64.match(/.{1,64}/g) ?? []
+  return `-----BEGIN PRIVATE KEY-----\n${lines.join('\n')}\n-----END PRIVATE KEY-----\n`
 }
 
 function getCalendarClient() {
@@ -26,7 +31,9 @@ function getCalendarClient() {
   }
 
   const normalizedKey = normalizePrivateKey(privateKey);
-  console.log('[calendar] Key format check — has newlines:', normalizedKey.includes('\n'), '| first 40 chars:', normalizedKey.slice(0, 40));
+  const lineCount = (normalizedKey.match(/\n/g) ?? []).length
+  const b64Length = (normalizedKey.match(/[A-Za-z0-9+/=]/g) ?? []).length
+  console.log(`[calendar] key lines=${lineCount} b64chars=${b64Length} starts=${normalizedKey.slice(0, 27)} ends=${normalizedKey.slice(-26).trim()}`);
 
   const auth = new google.auth.GoogleAuth({
     credentials: {
