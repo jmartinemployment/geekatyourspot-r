@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
+import { connection } from 'next/server';
 import { getSlotsForDate } from '@/services/google-calendar.service';
 
-export const dynamic = 'force-dynamic';
-
 export async function GET(request: Request): Promise<NextResponse> {
+  await connection();
   const { searchParams } = new URL(request.url);
   const date = searchParams.get('date');
 

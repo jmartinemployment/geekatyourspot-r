@@ -1,7 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
+import { connection } from 'next/server'
 import { getFreeSlots } from '@/services/google-calendar.service'
-
-export const dynamic = 'force-dynamic'
 
 const SYSTEM_PROMPT = `You are a friendly assistant for Geek at Your Spot, an AI 
 consulting firm in South Florida. Your job is to qualify leads before showing 
@@ -36,6 +35,7 @@ const tools: Anthropic.Tool[] = [
 ]
 
 export async function POST(req: Request) {
+  await connection()
   try {
     const body = await req.json()
     const { messages } = body as {
