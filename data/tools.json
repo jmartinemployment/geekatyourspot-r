@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "department": "Marketing",
+      "useCase": [
+        {
+          "title" : "Content Generation & Repurposing",
+          "description": "Create blog posts, ad copy, email sequences, and social media content at scale without proportional headcount growth. Produces publish-ready copy in seconds."
+        },
+        {
+          "title" : "Agentic Workflows Automation",
+          "description": "AI Agents that can autonomously plan, execute, and optimize multi-step campaigns. Unlike standard automation, these systems can decide which email to send, research the recipient, and log outcomes in a CRM without human intervention."
+        },
+        {
+          "title" : "Generative Search Optimization (GEO)",
+          "description": "optimizing content specifically to be cited by Answer Engines like ChatGPT and Perplexity."
+        }]
+  },
+  {
+    "id": "1",
+    "department": "Sales",
+      "useCase": [
+        {
+          "title" : "Prospecting and Lead Generation",
+          "description": "AI tools analyze large datasets to identify high-potential leads that fit your ideal customer profile. They can also automate research to discover, for example, which companies are hiring or experiencing leadership changes, suggesting the perfect timing for outreach."
+        },
+        {
+          "title" : "Personalization",
+          "description": "Generative AI allows sellers to draft personalized emails that reference a company&apos;s specific challenges, such as global expansion or regulatory changes, increasing response rates."
+        },
+        {
+          "title" : "Administrative Automation",
+          "description": "AI tools automatically log call notes, update deal stages, and fill in CRM fields with data gathered from meetings, such as budgets or decision timelines."
+        }]
+  }
+]
+
+    

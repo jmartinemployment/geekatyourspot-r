@@ -1,0 +1,1 @@
+import{a}from"./chunk-MUWX4QOF.js";import"./chunk-UYIEDGER.js";import"./chunk-JHUEMAZJ.js";import"./chunk-IJL3SOLN.js";import"./chunk-ZSLY2ZKM.js";import"./chunk-VSD7UZMJ.js";export{a as PolicyListComponent};

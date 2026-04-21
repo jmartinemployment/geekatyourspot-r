@@ -41,23 +41,42 @@ export default function Typewriter({ words }: TypewriterProps) {
   }, [index, words, count]);
 
   return (
-    
-    <span style={{ position: "relative", display: "inline-block" }}>
-      {/* Ghost text: Invisible, but reserves exact width/height */}
-      <span className="text-[5.5rem] leading-[0.375] font-black font-[var(--font-sora)] shadow-text"
-        style={{ visibility: "hidden", pointerEvents: "none" }}
-        aria-hidden="true"
-      >
-        {longestWord}
-      </span>
+    <>
+      <div className="lg:hidden">
+        <span style={{ position: "relative", display: "inline-block" }}>
+          {/* Ghost text: Invisible, but reserves exact width/height */}
+          <span
+            className="sm:text-6xl md:text-7xl font-black font-[var(--font-sora)] shadow-text invisible pointer-events-none"
+            aria-hidden="true"
+          >
+            {longestWord}
+          </span>
 
-      {/* Actual animated text: Positioned over the ghost */}
+          {/* Actual animated text: Positioned over the ghost */}
 
-      <span
-        className="text-[#8C2703] text-[5.5rem] leading-[0.375] font-black font-[var(--font-sora)] shadow-text absolute left-0 top-0"
-      >
-        {displayText}
-      </span>
-    </span>
+          <span className="text-[#8C2703] sm:text-6xl md:text-7xl font-black font-[var(--font-sora)] shadow-text absolute left-0 top-0">
+            {displayText}
+          </span>
+        </span>
+      </div>
+
+      <div className="hidden lg:block">
+        <span style={{ position: "relative", display: "inline-block" }}>
+          {/* Ghost text: Invisible, but reserves exact width/height */}
+          <span
+            className="lg:7xl xl:text-[6.5rem] leading-[0.625]  font-black font-[var(--font-sora)] shadow-text invisible pointer-events-none"
+            aria-hidden="true"
+          >
+            {longestWord}
+          </span>
+
+          {/* Actual animated text: Positioned over the ghost */}
+
+          <span className="text-[#8C2703] lg:text-7xl xl:text-[6.5rem] leading-[0.625] font-black font-[var(--font-sora)] shadow-text absolute left-0 top-0">
+            {displayText}
+          </span>
+        </span>
+      </div>
+    </>
   );
 }

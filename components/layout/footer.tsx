@@ -6,9 +6,8 @@ import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Services", href: "/services" },
+  { label: "AI Solutions", href: "/ai-solutions" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -20,9 +19,182 @@ export default function Footer() {
     </div>
 </footer> */}
 
-      <footer className="w-full bg-[#023059] h-screen flex flex-col justify-center px-5">
+      <footer className="w-full bg-[#023059] min-h-screen flex flex-col justify-center py-5 overflow-hidden lg:hidden">
+        <div className="grid grid-cols-12 content-center gap-1 px-5">
+          <div className="col-span-4">
+            <Link href="/" className="flex items-center py-2 shadow-text">
+              <Image
+                src="/images/GeekAtYourSpotWhite.svg"
+                alt="Geek @ Your Spot"
+                width={116}
+                height={32}
+                priority
+              />
+            </Link>
+            <p className="text-white text-xs shadow-text">
+              We design and build AI implementation and automation architectures
+              for brands that refuse to settle for average.
+            </p>
+            <div className="flex items-center gap-4">
+              <span>
+                <a
+                  target="_blank"
+                  className="inline-block w-8 h-8 items-center justify-center] transition-all duration-300 cursor-pointer group"
+                  href="https://www.facebook.com/GeekAtYourSpot/"
+                >
+                  <svg
+                    className="w-8 h-8 group-hover:scale-110 transition-transform"
+                    fill="#ff0000"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+              <span>
+                <a
+                  target="_blank"
+                  className="inline-block w-8 h-8 items-center justify-center transition-all duration-300 cursor-pointer group"
+                  href="https://www.linkedin.com/company/geekatyourspot"
+                >
+                  <svg
+                    className="w-7 h-8 group-hover:scale-110 transition-transform"
+                    fill="#ff0000"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div className="col-span-4">
+            <h2 className="text-white text-sm shadow-text font-bold">
+              Services
+            </h2>
+            <ul>
+              <li className="py-1">
+                <Link
+                  href="/ai-solutions"
+                  className="text-white text-xs shadow-text"
+                >
+                  AI Implementation
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link
+                  href="/ai-solutions"
+                  className="text-white text-xs shadow-text"
+                >
+                  Process Automation
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link
+                  href="/ai-solutions"
+                  className="text-white text-xs shadow-text"
+                >
+                  Data Analytics
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link
+                  href="/ai-solutions"
+                  className="text-white text-xs shadow-text"
+                >
+                  AI Consulting
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-span-4">
+            <h2 className="text-white text-sm shadow-text font-bold">
+              Contact
+            </h2>
+            <ul>
+              <li className="py-1">
+                <a
+                  href="mailto:info@geekatyourspot.com"
+                  className="text-white text-xs shadow-text"
+                >
+                  <span className="text-white text-sm shadow-text font-bold">
+                    EMail
+                  </span>
+                  <br />
+                  info@geekatyourspot.com
+                </a>
+              </li>
+              <li className="py-2">
+                <a
+                  href="tel:+15615263512"
+                  className="text-white text-xs shadow-text"
+                >
+                  <span className="font-bold text-white text-sm shadow-text">
+                    Call Us
+                  </span>
+                  <br />
+                  (561) 526-3512
+                </a>
+              </li>
+              <li className="py-2">
+                <a
+                  href="https://maps.app.goo.gl/YourLocationLink"
+                  className="font-medium text-white text-xs shadow-text"
+                >
+                  <span className="font-bold text-white text-sm shadow-text">
+                    Headquarters
+                  </span>
+                  <br />
+                  Delray Beach, Fl
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-12">
+            <div className="border-t border-white/5 pt-12 flex flex-col items-center justify-center overflow-hidden relative">
+              <div className="flex flex-col md:flex-row w-full justify-between items-center gap-1 text-xs md:text-xs text-slate-500 font-medium uppercase tracking-widest px-4 text-center md:text-left">
+                <span className="inline-block text-center text-xs">
+                  © 2026 Geek at Your Spot.
+                </span>
+                <span className="inline-block text-center text-xs">
+                  All rights reserved.
+                </span>
+                <span className="inline-block text-center text-xs">
+                  <a
+                    className="hover:text-white transition-colors"
+                    href="/privacy-policy"
+                  >
+                    Privacy Policy
+                  </a>
+                </span>
+                <span className="inline-block text-center text-xs">
+                  <a
+                    className="hover:text-white transition-colors"
+                    href="/terms-and-conditions"
+                  >
+                    Terms of Service
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <footer className="w-full bg-[#023059] min-h-screen flex flex-col justify-center px-5 hidden lg:block py-5">
         <div className="grid grid-cols-12 content-center gap-4 px-5 container">
-          <div className="col-span-2 ">
+          <div className="col-span-4 ">
             <Link href="/" className="flex items-center py-2 shadow-text">
               <Image
                 src="/images/GeekAtYourSpotWhite.svg"
@@ -79,15 +251,14 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="col-span-2">&nbsp;</div>
-          <div className="col-span-3">
+          <div className="col-span-4">
             <h2 className="text-white text-medium shadow-text font-bold">
               Services
             </h2>
             <ul>
               <li className="py-1">
                 <Link
-                  href="/ai-implementation"
+                  href="/ai-solutions"
                   className="text-white text-medium shadow-text"
                 >
                   AI Implementation
@@ -95,7 +266,7 @@ export default function Footer() {
               </li>
               <li className="py-1">
                 <Link
-                  href="/process-automation"
+                  href="/ai-solutions"
                   className="text-white text-medium shadow-text"
                 >
                   Process Automation
@@ -103,7 +274,7 @@ export default function Footer() {
               </li>
               <li className="py-1">
                 <Link
-                  href="/data-analytics"
+                  href="/ai-solutions"
                   className="text-white text-medium shadow-text"
                 >
                   Data Analytics
@@ -111,7 +282,7 @@ export default function Footer() {
               </li>
               <li className="py-1">
                 <Link
-                  href="/ai-consulting"
+                  href="/ai-solutions"
                   className="text-white text-medium shadow-text"
                 >
                   AI Consulting
@@ -119,54 +290,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-span-3">
-            <h2 className="text-white text-medium shadow-text font-bold">
-              Company
-            </h2>
-            <ul>
-              <li className="py-1">
-                <Link
-                  href="/about"
-                  className="text-white text-medium shadow-text"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="py-1">
-                <Link
-                  href="/blog"
-                  className="text-white text-medium shadow-text"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li className="py-1">
-                <Link
-                  href="/data-analytics"
-                  className="text-white text-medium shadow-text"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="py-1">
-                <Link
-                  href="/ai-consulting"
-                  className="text-white text-medium shadow-text"
-                >
-                  Our Process
-                </Link>
-              </li>
-              <li className="py-1">
-                <Link
-                  href="/ai-consulting"
-                  className="text-white text-medium shadow-text"
-                >
-                  Case Studies
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-2">
+          <div className="col-span-4">
             <h2 className="text-white text-medium shadow-text font-bold">
               Contact
             </h2>
@@ -211,7 +335,7 @@ export default function Footer() {
           </div>
           <div className="col-span-12">
             <div className="border-t border-white/5 pt-12 flex flex-col items-center justify-center overflow-hidden relative">
-              <div className="flex flex-col md:flex-row w-full justify-between items-center gap-6 text-xs md:text-sm text-slate-500 font-medium uppercase tracking-widest px-4 text-center md:text-left">
+              <div className="flex flex-col md:flex-row w-full justify-between items-center gap-6 text-xs md:text-xs text-slate-500 font-medium uppercase tracking-widest px-4 text-center md:text-left">
                 <p className="inline-block text-center text-xs">
                   © 2026 Geek at Your Spot.
                 </p>
