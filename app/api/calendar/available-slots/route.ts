@@ -18,6 +18,7 @@ export async function GET(request: Request): Promise<NextResponse> {
     const slots = await getSlotsForDate(date);
     return NextResponse.json({ slots });
   } catch (error) {
+    console.error('[available-slots] Error:', error);
     const message = error instanceof Error ? error.message : 'Failed to fetch slots';
     return NextResponse.json({ error: message }, { status: 500 });
   }
