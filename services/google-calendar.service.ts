@@ -1,18 +1,37 @@
 import { google } from 'googleapis'
 import type { TimeSlot, Booking, ContactInfo } from '@/components/landing-page/scheduler/state/types'
 
+function normalizePrivateKey(key: string): string {
+  // Case 1: literal \n sequences (dotenv / .env.local format)
+  if (key.includes('\\n')) return key.replace(/\\n/g, '\n');
+  // Case 2: already has real newlines (Vercel dashboard paste)
+  if (key.includes('\n')) return key;
+  // Case 3: Vercel CLI stripped all newlines — reformat PEM manually
+  const match = /-----BEGIN PRIVATE KEY-----([\s\S]+?)-----END PRIVATE KEY-----/.exec(key);
+  if (match) {
+    const b64 = match[1].replace(/\s/g, '');
+    const lines = b64.match(/.{1,64}/g) ?? [];
+    return `-----BEGIN PRIVATE KEY-----\n${lines.join('\n')}\n-----END PRIVATE KEY-----\n`;
+  }
+  return key;
+}
+
 function getCalendarClient() {
   const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
   const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
   if (!clientEmail || !privateKey) {
+    console.error('[calendar] Missing credentials — GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY not set');
     return null;
   }
+
+  const normalizedKey = normalizePrivateKey(privateKey);
+  console.log('[calendar] Key format check — has newlines:', normalizedKey.includes('\n'), '| first 40 chars:', normalizedKey.slice(0, 40));
 
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: clientEmail,
-      private_key: privateKey.includes('\\n') ? privateKey.replace(/\\n/g, '\n') : privateKey,
+      private_key: normalizedKey,
     },
     scopes: ['https://www.googleapis.com/auth/calendar'],
   })
