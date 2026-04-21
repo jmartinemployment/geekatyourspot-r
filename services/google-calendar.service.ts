@@ -1,44 +1,46 @@
 import { google } from 'googleapis'
 import type { TimeSlot, Booking, ContactInfo } from '@/components/landing-page/scheduler/state/types'
 
-function normalizePrivateKey(key: string): string {
-  // Strip surrounding quotes accidentally included in env var value
-  key = key.replace(/^["']|["']$/g, '').trim()
-  // Convert literal \n sequences to real newlines (dotenv / .env.local format)
+function resolvePrivateKey(): string | null {
+  // Preferred: base64-encoded key stored as GOOGLE_PRIVATE_KEY_B64
+  // This survives all Vercel env var encoding formats without ambiguity
+  const b64Env = process.env.GOOGLE_PRIVATE_KEY_B64
+  if (b64Env) {
+    const decoded = Buffer.from(b64Env.trim(), 'base64').toString('utf8')
+    console.log('[calendar] using GOOGLE_PRIVATE_KEY_B64, decoded length:', decoded.length)
+    return decoded
+  }
+
+  // Fallback: raw PEM in GOOGLE_PRIVATE_KEY
+  const rawKey = process.env.GOOGLE_PRIVATE_KEY
+  if (!rawKey) return null
+
+  let key = rawKey.replace(/^["']|["']$/g, '').trim()
   if (key.includes('\\n')) key = key.replace(/\\n/g, '\n')
-  // Strip carriage returns
   key = key.replace(/\r/g, '')
-  // Always reconstruct PEM from scratch to guarantee correct formatting
+
   const match = /-----BEGIN PRIVATE KEY-----([\s\S]*?)-----END PRIVATE KEY-----/.exec(key)
   if (match) {
     const b64 = match[1].replace(/[^A-Za-z0-9+/=]/g, '')
     const lines = b64.match(/.{1,64}/g) ?? []
     return `-----BEGIN PRIVATE KEY-----\n${lines.join('\n')}\n-----END PRIVATE KEY-----\n`
   }
-  // No PEM headers — treat entire value as raw base64 body
-  const b64 = key.replace(/[^A-Za-z0-9+/=]/g, '')
-  const lines = b64.match(/.{1,64}/g) ?? []
-  return `-----BEGIN PRIVATE KEY-----\n${lines.join('\n')}\n-----END PRIVATE KEY-----\n`
+  return key
 }
 
 function getCalendarClient() {
   const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const privateKey = process.env.GOOGLE_PRIVATE_KEY;
+  const privateKey = resolvePrivateKey();
 
   if (!clientEmail || !privateKey) {
-    console.error('[calendar] Missing credentials — GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY not set');
+    console.error('[calendar] Missing credentials — GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY_B64 not set');
     return null;
   }
-
-  const normalizedKey = normalizePrivateKey(privateKey);
-  const lineCount = (normalizedKey.match(/\n/g) ?? []).length
-  const b64Length = (normalizedKey.match(/[A-Za-z0-9+/=]/g) ?? []).length
-  console.log(`[calendar] key lines=${lineCount} b64chars=${b64Length} starts=${normalizedKey.slice(0, 27)} ends=${normalizedKey.slice(-26).trim()}`);
 
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: clientEmail,
-      private_key: normalizedKey,
+      private_key: privateKey,
     },
     scopes: ['https://www.googleapis.com/auth/calendar'],
   })
