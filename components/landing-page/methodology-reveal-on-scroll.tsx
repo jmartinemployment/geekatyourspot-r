@@ -15,11 +15,10 @@ export function MethogologyRevealOnScroll({
   className,
 }: MethogologyRevealOnScrollProps) {
   const variants = {
-    up: { initial: { opacity: 0, y: 40 }, animate: { opacity: 1, y: 0 } },
-    down: { initial: { opacity: 0, y: -40 }, animate: { opacity: 1, y: 0 } },
-    left: { initial: { opacity: 0, x: 40 }, animate: { opacity: 1, x: 0 } },
-    right: { initial: { opacity: 0, x: -40 }, animate: { opacity: 1, x: 0 } },
-
+    up: { initial: { y: 40 }, animate: { y: 0 } },
+    down: { initial: { y: -40 }, animate: { y: 0 } },
+    left: { initial: { x: 40 }, animate: { x: 0 } },
+    right: { initial: { x: -40 }, animate: { x: 0 } },
   };
 
   return (
