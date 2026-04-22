@@ -102,7 +102,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  title: "Geek at Your Spot Application",
+  title: {
+    default: "Geek at Your Spot | AI Consulting & Automation for Small Business — South Florida",
+    template: "%s | Geek at Your Spot",
+  },
   description:
     "Technology consultancy in Delray Beach, Florida specializing in integrating AI, Process Automation, AI Chatbots, Data Analytics, Strategy Consulting, Security & Compliance for small businesses in Broward, Palm Beach and Miami Dade Counties. Other services include bespoke application development using React, Angular, Microsoft C#, SQL, Node.js, Postgres, Wordpress development. From Timex Sinclair to AI",
   robots: {

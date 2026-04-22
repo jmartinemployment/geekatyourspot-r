@@ -6,9 +6,9 @@ import { JsonLd } from "@/components/seo/json-ld";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Solutions | Geek at Your Spot",
+  title: "AI Solutions for Small Business | Process Automation & Chatbots — South Florida",
   description:
-    "AI integration, process automation, chatbots, data analytics, strategy consulting, and security & compliance for small businesses in South Florida.",
+    "AI integration, process automation, chatbots, data analytics, strategy consulting, and security & compliance for small businesses in Broward, Palm Beach, and Miami-Dade.",
 };
 
 const aiSolutionsSchema = {
