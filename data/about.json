@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "Enterprise Expertise. Small Business Focus.",
+    "subtitle": "Enterprise-level technology expertise, distilled 30 years to serve you.",
+    "image": "/images/action-figure.jpeg"
+  },
+  "founder": {
+    "name": "Jeff Martin",
+    "role": "CEO",
+    "photo": "https://geekatyourspot.com/wp-content/uploads/2026/01/me-scaled.jpeg",
+    "bio": [
+      "I have spent over three decades building the technology systems that power enterprise businesses. Modernizing CRM platforms for Fortune 500 insurance companies, designing government-compliant service systems, and architecting secure, scalable solutions that process millions of transactions.",
+      "Expertise that spans full-stack development (C#, .NET, Angular, React), cloud infrastructure (AWS, Azure), AI integration (Claude API, ChatGPT), database design (SQL Server, PostgreSQL), cybersecurity, and digital marketing optimization.",
+      "Technology should make business easier, not more complicated. Bringing enterprise-level capabilities to businesses of all sizes — providing practical, scalable solutions without the enterprise price tag."
+    ],
+    "tags": [
+      "Full Stack Development",
+      "AI Integration",
+      "Cloud Architecture",
+      "Cybersecurity",
+      "Database Design",
+      "SEO & Analytics"
+    ]
+  },
+  "mission": {
+    "heading": "You shouldn't have to be a Fortune 500 to build like one.",
+    "image": "https://geekatyourspot.com/wp-content/uploads/2026/01/lucid-origin_Professional_business_illustration_showing_equality_in_technology_access_split-s-0.jpeg",
+    "imageAlt": "Empowering small business with enterprise technology",
+    "paragraphs": [
+      "For too long, small and mid-sized businesses have been locked out of the technology solutions that power Fortune 500 companies — not because those solutions do not exist, but because they have been priced and packaged for enterprise budgets. At Geek at Your Spot, we are changing that. We bring 30+ years of battle-tested enterprise experience building systems for Fortune 500 companies and government agencies directly to businesses that need these capabilities most.",
+      "We do not just build websites — we architect solutions. Whether it is WordPress sites supercharged with Angular components, AI-powered business intelligence, cutting-edge cybersecurity, or conversion-optimized marketing systems, we deliver enterprise-grade technology at prices that make sense for growing businesses.",
+      "At the heart of everything we do is a simple belief: technology should amplify your business, not complicate it. From that first Timex computer in 1982 to today's AI revolution, the mission has always been the same — make powerful technology accessible, approachable, and actually useful for the people who need it most."
+    ]
+  },
+  "timeline": [
+    {
+      "year": "1982",
+      "label": "Timex Sinclair",
+      "description": "Where the programming journey began. This game in Basic.",
+      "image": "https://geekatyourspot.com/wp-content/uploads/2026/01/Timex-Sinclair-TS-1000-1-1-inch.png"
+    },
+    {
+      "year": "1985",
+      "label": "Apple Macintosh",
+      "description": "Illustrator, Photoshop, FileMaker, QuarkXPress, Pascal.",
+      "image": "https://geekatyourspot.com/wp-content/uploads/2026/01/macintosh-photo.jpeg"
+    },
+    {
+      "year": "1993",
+      "label": "Macintosh Office",
+      "description": "Implemented Macintosh Office. File server, 5 Macs, 2 PCs.",
+      "image": "https://geekatyourspot.com/wp-content/uploads/2026/01/macintosh-office-inch.jpeg"
+    },
+    {
+      "year": "2007",
+      "label": "ACORD Architecture",
+      "description": "Real-World Applications of the ACORD Reference Architecture.",
+      "image": "https://geekatyourspot.com/wp-content/uploads/2026/01/Timex-Sinclair-TS-1000-1-1-inch.png"
+    },
+    {
+      "year": "2014",
+      "label": "SOA",
+      "description": "Windows Services provided access points to implement.",
+      "image": "https://geekatyourspot.com/wp-content/uploads/2026/01/macintosh-photo.jpeg"
+    },
+    {
+      "year": "2026",
+      "label": "Geek@YourSpot",
+      "description": "AI-powered solutions for businesses that need enterprise power.",
+      "image": "https://geekatyourspot.com/wp-content/uploads/2025/11/ai-icon.svg"
+    }
+  ]
+}

@@ -9,8 +9,14 @@ Geek at Your Spot helps small business owners in South Florida cut costs, save t
 ## Pages
 
 - [Home](https://www.geekatyourspot.com/): Overview of services, four-phase AI methodology, and booking.
-- [AI Solutions](https://www.geekatyourspot.com/ai-solutions): Full catalog of AI and technology services offered.
-- [Contact](https://www.geekatyourspot.com/contact): Book a free strategy call or send a message.
+- [AI Solutions](https://www.geekatyourspot.com/ai-solutions): Full catalog of AI and technology services with links to dedicated service pages.
+- [Contact / Book a Call](https://www.geekatyourspot.com/contact): Book a free strategy call or send a message.
+- [AI Integration](https://www.geekatyourspot.com/services/ai-integration): Dedicated page — embedding AI tools into existing business workflows and systems.
+- [Process Automation](https://www.geekatyourspot.com/services/process-automation): Dedicated page — BPA, RPA, IPA, and workflow automation for small businesses.
+- [AI Chatbots](https://www.geekatyourspot.com/services/ai-chatbots): Dedicated page — custom conversational AI for lead qualification and customer service.
+- [AI Content & Marketing](https://www.geekatyourspot.com/services/ai-content-marketing): Dedicated page — AI-powered content production, email automation, and personalization.
+- [AI Strategy Consulting](https://www.geekatyourspot.com/services/ai-strategy-consulting): Dedicated page — AI readiness assessment, use case prioritization, and implementation roadmap.
+- [Security & Compliance](https://www.geekatyourspot.com/services/security-compliance): Dedicated page — AI data security, regulatory compliance (HIPAA, CCPA, GDPR), and audit trails.
 
 ## Services
 

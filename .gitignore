@@ -43,3 +43,14 @@ next-env.d.ts
 # npm cache dirs
 /clear/
 /clearnpm/
+.env*.local
+
+# IDE
+.vscode/
+.sonarlint/
+
+# WordPress reference backups (local only)
+app/about-backup/
+app/blog-backup/
+app/email-config-backup/
+app/services-detail-backup/

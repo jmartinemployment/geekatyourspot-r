@@ -5,17 +5,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "AI Solutions", href: "/ai-solutions" },
-  { label: "Contact", href: "/contact" },
+  // { label: "Home", href: "/" },
+  // { label: "AI Solutions", href: "/ai-solutions" },
+  // { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#023059] flex min-h-screen">
-      <div className="flex flex-col h-screen justify-center">
-        <div className="grid grid-cols-12 gap-4 container">
-          <div className="col-span-4">
+    <footer className="bg-[#023059] pt-5">
+      <div className="flex flex-col justify-center container mt-5 pt-5">
+        <div className="grid grid-cols-12 gap-4 container py-5 my-5">
+          <div className="col-span-3">
             <Link href="/" className="py-5">
               <Image
                 src="/images/GeekAtYourSpotWhite.svg"
@@ -72,7 +72,7 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="col-span-5">&nbsp;</div>
+          <div className="col-span-6">&nbsp;</div>
           <div className="col-span-3">
             <h2 className="text-white text-md shadow-text font-bold uppercase">
               Contact
@@ -117,35 +117,30 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="flex mt-12">
-        <div className="fixed bottom-0 mb-[env(safe-area-inset-bottom)] w-full">
-          <div className="border-t border-white/5 flex flex-col items-center justify-center py-5">
-            <div className="flex flex-row w-full justify-between items-center gap-6 text-slate-500 uppercase tracking-widest text-center px-5">
-              <p className="inline-block text-center text-xs">
-                © 2026 Geek at Your Spot.
-              </p>
-              <p className="inline-block text-center text-xs">
-                {" "}
-                All rights reserved.
-              </p>
-              <p className="inline-block text-center text-xs">
-                <a
-                  className="hover:text-white transition-colors"
-                  href="/privacy-policy"
-                >
-                  Privacy Policy
-                </a>
-              </p>
-              <p className="inline-block text-center text-xs">
-                <a
-                  className="hover:text-white transition-colors"
-                  href="/terms-and-conditions"
-                >
-                  Terms of Service
-                </a>
-              </p>
-            </div>
+        <div className="border-t border-white/5 flex flex-col items-center justify-center py-5 mt-5">
+          <div className="flex flex-row w-full justify-between items-center gap-6 text-slate-500 uppercase tracking-widest text-center px-5">
+            <p className="inline-block text-center text-xs">
+              © 2026 Geek at Your Spot
+            </p>
+            <p className="inline-block text-center text-xs">
+              All rights reserved
+            </p>
+            <p className="inline-block text-center text-xs">
+              <a
+                className="hover:text-white transition-colors"
+                href="/privacy-policy"
+              >
+                Privacy Policy
+              </a>
+            </p>
+            <p className="inline-block text-center text-xs">
+              <a
+                className="hover:text-white transition-colors"
+                href="/terms-and-conditions"
+              >
+                Terms of Service
+              </a>
+            </p>
           </div>
         </div>
       </div>
