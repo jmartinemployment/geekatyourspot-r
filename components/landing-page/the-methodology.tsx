@@ -82,7 +82,7 @@ export default function TheMethodologySection() {
                       </h3>
                       <span className="text-white text-sm shadow-text">
                         Identify specific inefficiencies where AI can add value.
-                        Set clear, measurable Key Performance Indicatorys
+                        Set clear, measurable Key Performance Indicators
                         (KPIs). Actionable insights that can guide businesses in
                         making informed decisions about a marketing campaign or
                         business decision.
@@ -111,11 +111,11 @@ export default function TheMethodologySection() {
                         Data Assessment
                       </h3>
                       <span className="text-white text-sm shadow-text">
-                        A structured process of evaluating data for Accurancy,
+                        A structured process of evaluating data for Accuracy,
                         Completeness, Consistency, Timeliness, Validity and
-                        Uniquesness. Then assess the work involved in cleansing
+                        Uniqueness. Then assess the work involved in cleansing
                         and standardization to remove duplicates, handle missing
-                        values, and standarize formats.
+                        values, and standardize formats.
                       </span>
                     </div>
                   </div>
@@ -141,7 +141,7 @@ export default function TheMethodologySection() {
                         AI Technologies
                       </h3>
                       <span className="text-white text-sm shadow-text">
-                        The problem first approach. Start small, identifify a
+                        The problem first approach. Start small, identify a
                         single specific workflow to automate. Prioritize tools
                         that work within your existing systems. Choose ease of
                         use platforms that require minimal training. And
@@ -198,10 +198,10 @@ export default function TheMethodologySection() {
               Data Quality Assessment
             </h3>
             <span className="text-white text-sm leading-none shadow-text">
-              A structured process of evaluating data for Accurancy,
-              Completeness, Consistency, Timeliness, Validity and Uniquesness.
+              A structured process of evaluating data for Accuracy,
+              Completeness, Consistency, Timeliness, Validity and Uniqueness.
               Then assess the work involved in cleansing and standardization to
-              remove duplicates, handle missing values, and standarize formats.
+              remove duplicates, handle missing values, and standardize formats.
             </span>
           </div>
           </div>
@@ -270,7 +270,7 @@ export default function TheMethodologySection() {
                   </h3>
                   <span className="text-white text-md leading-[0.95] shadow-text">
                     Identify specific inefficiencies where AI can add value. Set
-                    clear, measurable Key Performance Indicatorys (KPIs).
+                    clear, measurable Key Performance Indicators (KPIs).
                     Actionable insights that can guide businesses in making
                     informed decisions about a marketing campaign or business
                     decision.
@@ -288,11 +288,11 @@ export default function TheMethodologySection() {
                     Data Quality Assessment
                   </h3>
                   <span className="text-white text-md leading-[0.95] shadow-text">
-                    A structured process of evaluating data for Accurancy,
+                    A structured process of evaluating data for Accuracy,
                     Completeness, Consistency, Timeliness, Validity and
-                    Uniquesness. Then assess the work involved in cleansing and
+                    Uniqueness. Then assess the work involved in cleansing and
                     standardization to remove duplicates, handle missing values,
-                    and standarize formats.
+                    and standardize formats.
                   </span>
                 </div>
                 <div className="col-span-1">&nbsp;</div>
@@ -307,7 +307,7 @@ export default function TheMethodologySection() {
                     Choose the Right AI Technologies
                   </h3>
                   <span className="text-white text-md leading-[0.95] shadow-text">
-                    The problem first approach. Start small, identifify a single
+                    The problem first approach. Start small, identify a single
                     specific workflow to automate. Prioritize tools that work
                     within your existing systems. Choose ease of use platforms
                     that require minimal training. And consider the total cost
@@ -349,7 +349,7 @@ export default function TheMethodologySection() {
                       </h3>
                       <span className="text-white lg:text-sm xl:text-lg shadow-text">
                         Identify specific inefficiencies where AI can add value.
-                        Set clear, measurable Key Performance Indicatorys
+                        Set clear, measurable Key Performance Indicators
                         (KPIs). Actionable insights that can guide businesses in
                         making informed decisions about a marketing campaign or
                         business decision.
@@ -371,11 +371,11 @@ export default function TheMethodologySection() {
                         Data Quality Assessment
                       </h3>
                       <span className="text-white lg:text-sm xl:text-lg shadow-text">
-                        A structured process of evaluating data for Accurancy,
+                        A structured process of evaluating data for Accuracy,
                         Completeness, Consistency, Timeliness, Validity and
-                        Uniquesness. Then assess the work involved in cleansing
+                        Uniqueness. Then assess the work involved in cleansing
                         and standardization to remove duplicates, handle missing
-                        values, and standarize formats.
+                        values, and standardize formats.
                       </span>
                     </div>
                   </div>
@@ -393,7 +393,7 @@ export default function TheMethodologySection() {
                         Choose the Right AI Technologies
                       </h3>
                       <span className="text-white lg:text-sm xl:text-lg shadow-text">
-                        The problem first approach. Start small, identifify a
+                        The problem first approach. Start small, identify a
                         single specific workflow to automate. Prioritize tools
                         that work within your existing systems. Choose ease of
                         use platforms that require minimal training. And
