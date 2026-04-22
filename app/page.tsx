@@ -39,9 +39,9 @@ const aiConsultingServiceSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Contact Us | Geek at Your Spot",
+  title: "AI Consulting for Small Business | Delray Beach, South Florida",
   description:
-    "Get in touch with the Geek at Your Spot team. We help small businesses in South Florida implement AI.",
+    "AI implementation, process automation, and chatbots for small businesses in Broward, Palm Beach, and Miami-Dade Counties. Book a free strategy call.",
 };
 
 export default function Home() {
