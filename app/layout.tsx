@@ -46,6 +46,7 @@ const localBusinessSchema = {
     "Security and Compliance",
     "Web Application Development",
   ],
+  hasMap: "https://share.google/N5czXCIcHvptENeqr",
   sameAs: [
     "https://www.facebook.com/GeekAtYourSpot/",
     "https://www.linkedin.com/company/geekatyourspot",
