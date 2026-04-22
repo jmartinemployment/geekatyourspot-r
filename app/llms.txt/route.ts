@@ -38,6 +38,7 @@ Four-phase approach to AI implementation:
 - **Phone**: +1 561-526-3512
 - **Founded**: By Jeff Martin — full-stack developer and AI consultant with 30+ years of experience
 - **Philosophy**: From Timex Sinclair to AI — deep technical roots applied to practical small business outcomes
+- **Google Business Profile**: https://share.google/2WOGINA7Cx35sdUjp
 - **Facebook**: https://www.facebook.com/GeekAtYourSpot/
 - **LinkedIn**: https://www.linkedin.com/company/geekatyourspot
 `
