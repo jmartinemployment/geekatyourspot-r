@@ -35,9 +35,11 @@ Four-phase approach to AI implementation:
 
 - **Location**: Delray Beach, Florida
 - **Service Area**: Broward County, Palm Beach County, Miami-Dade County
+- **Phone**: +1 561-526-3512
 - **Founded**: By Jeff Martin — full-stack developer and AI consultant with 30+ years of experience
 - **Philosophy**: From Timex Sinclair to AI — deep technical roots applied to practical small business outcomes
-- **Social**: [Facebook](https://www.facebook.com/GeekAtYourSpot/) · [LinkedIn](https://www.linkedin.com/company/geekatyourspot)
+- **Facebook**: https://www.facebook.com/GeekAtYourSpot/
+- **LinkedIn**: https://www.linkedin.com/company/geekatyourspot
 `
 
 export function GET() {

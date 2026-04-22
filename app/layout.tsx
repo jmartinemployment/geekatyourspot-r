@@ -16,7 +16,7 @@ const localBusinessSchema = {
   url: "https://www.geekatyourspot.com",
   logo: "https://www.geekatyourspot.com/images/GeekAtYourSpot.svg",
   image: "https://www.geekatyourspot.com/images/GeekAtYourSpot.svg",
-  telephone: "",
+  telephone: "+1 561-526-3512",
   email: "jeff@geekatyourspot.com",
   address: {
     "@type": "PostalAddress",
@@ -26,8 +26,16 @@ const localBusinessSchema = {
   },
   areaServed: [
     { "@type": "County", name: "Broward County", containedInPlace: "Florida" },
-    { "@type": "County", name: "Palm Beach County", containedInPlace: "Florida" },
-    { "@type": "County", name: "Miami-Dade County", containedInPlace: "Florida" },
+    {
+      "@type": "County",
+      name: "Palm Beach County",
+      containedInPlace: "Florida",
+    },
+    {
+      "@type": "County",
+      name: "Miami-Dade County",
+      containedInPlace: "Florida",
+    },
   ],
   knowsAbout: [
     "Artificial Intelligence",
@@ -38,7 +46,10 @@ const localBusinessSchema = {
     "Security and Compliance",
     "Web Application Development",
   ],
-  sameAs: [],
+  sameAs: [
+    "https://www.facebook.com/GeekAtYourSpot/",
+    "https://www.linkedin.com/company/geekatyourspot",
+  ],
   priceRange: "$$",
 };
 
@@ -58,40 +69,40 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.geekatyourspot.com'),
-    alternates: {
-    canonical: '/',
+  metadataBase: new URL("https://www.geekatyourspot.com"),
+  alternates: {
+    canonical: "/",
     languages: {
-      'en-US': '/en-US',
+      "en-US": "/en-US",
     },
   },
   openGraph: {
-    title: 'Geek at Your Spot',
-    description: "Technology consultancy in Delray Beach, Florida specializing in integrating AI, Process Automation, AI Chatbots, Data Analytics, Strategy Consulting, Security & Compliance for small businesses in Broward, Palm Beach and Miami Dade Counties. Other services include bespoke application development using React, Angular, Microsoft C#, SQL, Node.js, Postgres, Wordpress development. From Timex Sinclair to AI",
-    url: 'https://www.geekatyourspot.com',
-    siteName: 'Geek at Your Spot',
+    title: "Geek at Your Spot",
+    description:
+      "Technology consultancy in Delray Beach, Florida specializing in integrating AI, Process Automation, AI Chatbots, Data Analytics, Strategy Consulting, Security & Compliance for small businesses in Broward, Palm Beach and Miami Dade Counties. Other services include bespoke application development using React, Angular, Microsoft C#, SQL, Node.js, Postgres, Wordpress development. From Timex Sinclair to AI",
+    url: "https://www.geekatyourspot.com",
+    siteName: "Geek at Your Spot",
     images: [
       {
-        url: 'https://www.geekatyourspot.com/images/GeekAtYourSpot.svg', // Must be an absolute URL
+        url: "https://www.geekatyourspot.com/images/GeekAtYourSpot.svg", // Must be an absolute URL
         width: 124,
         height: 51,
       },
       {
-        url: 'https://www.geekatyourspot.com/images/GeekAtYourSpot.svg', // Must be an absolute URL
+        url: "https://www.geekatyourspot.com/images/GeekAtYourSpot.svg", // Must be an absolute URL
         width: 124,
         height: 51,
-        alt: 'My custom alt',
+        alt: "My custom alt",
       },
     ],
-    videos: [
-    ],
-    audio: [
-    ],
-    locale: 'en_US',
-    type: 'website',
+    videos: [],
+    audio: [],
+    locale: "en_US",
+    type: "website",
   },
   title: "Geek at Your Spot Application",
-  description: "Technology consultancy in Delray Beach, Florida specializing in integrating AI, Process Automation, AI Chatbots, Data Analytics, Strategy Consulting, Security & Compliance for small businesses in Broward, Palm Beach and Miami Dade Counties. Other services include bespoke application development using React, Angular, Microsoft C#, SQL, Node.js, Postgres, Wordpress development. From Timex Sinclair to AI",
+  description:
+    "Technology consultancy in Delray Beach, Florida specializing in integrating AI, Process Automation, AI Chatbots, Data Analytics, Strategy Consulting, Security & Compliance for small businesses in Broward, Palm Beach and Miami Dade Counties. Other services include bespoke application development using React, Angular, Microsoft C#, SQL, Node.js, Postgres, Wordpress development. From Timex Sinclair to AI",
   robots: {
     index: true,
     follow: true,
@@ -100,16 +111,16 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       noimageindex: false,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-   category: 'technology',
-   icons: {
-    icon: '/favicon.ico', // Points to public/favicon.ico
+  category: "technology",
+  icons: {
+    icon: "/favicon.ico", // Points to public/favicon.ico
   },
-}
+};
 export default function RootLayout({
   children,
 }: Readonly<{
