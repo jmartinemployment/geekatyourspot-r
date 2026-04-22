@@ -50,6 +50,7 @@ const localBusinessSchema = {
   sameAs: [
     "https://www.facebook.com/GeekAtYourSpot/",
     "https://www.linkedin.com/company/geekatyourspot",
+    "https://share.google/2WOGINA7Cx35sdUjp",
   ],
   priceRange: "$$",
 };
