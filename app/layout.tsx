@@ -4,6 +4,43 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import { JsonLd } from "@/components/seo/json-ld";
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://www.geekatyourspot.com/#business",
+  name: "Geek at Your Spot",
+  description:
+    "AI consulting firm helping small businesses in South Florida implement AI, process automation, chatbots, and data analytics.",
+  url: "https://www.geekatyourspot.com",
+  logo: "https://www.geekatyourspot.com/images/GeekAtYourSpot.svg",
+  image: "https://www.geekatyourspot.com/images/GeekAtYourSpot.svg",
+  telephone: "",
+  email: "jeff@geekatyourspot.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Delray Beach",
+    addressRegion: "FL",
+    addressCountry: "US",
+  },
+  areaServed: [
+    { "@type": "County", name: "Broward County", containedInPlace: "Florida" },
+    { "@type": "County", name: "Palm Beach County", containedInPlace: "Florida" },
+    { "@type": "County", name: "Miami-Dade County", containedInPlace: "Florida" },
+  ],
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Process Automation",
+    "AI Chatbots",
+    "Data Analytics",
+    "AI Strategy Consulting",
+    "Security and Compliance",
+    "Web Application Development",
+  ],
+  sameAs: [],
+  priceRange: "$$",
+};
 
 const sora = Sora({
   display: "swap",
@@ -92,6 +129,7 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd schema={localBusinessSchema} />
         <Navbar />
         <main>{children}</main>
         <Footer />
