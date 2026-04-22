@@ -2,6 +2,7 @@ import HeroSection from "@/components/landing-page/hero-section";
 import CloneYourselfSection from "@/components/landing-page/clone-yourself";
 import TheMethodologySection from "@/components/landing-page/the-methodology";
 import SeamlessIntegrationsSection from "@/components/landing-page/seamless-integrations";
+import HomeFaqSection from "@/components/landing-page/faq-section";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { SchedulerShell } from "@/components/landing-page/scheduler/scheduler-shell";

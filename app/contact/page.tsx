@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { SchedulerShell } from "@/components/landing-page/scheduler/scheduler-shell";
+import FaqSection from "@/components/contact/faq-section";
+import CaseStudiesSection from "@/components/contact/case-studies-section";
 
 export const metadata: Metadata = {
   title: "Book a Free AI Strategy Call | Geek at Your Spot",
@@ -10,8 +12,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage(): React.JSX.Element {
   return (
-    <Suspense>
-      <SchedulerShell />
-    </Suspense>
+    <>
+      <Suspense>
+        <SchedulerShell />
+      </Suspense>
+      <CaseStudiesSection />
+      <FaqSection />
+    </>
   );
 }

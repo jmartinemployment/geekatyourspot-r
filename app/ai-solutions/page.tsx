@@ -1,7 +1,9 @@
 import HeroSection from "../../components/ai-solutions/hero-section";
+import ServicesNav from "../../components/ai-solutions/services-nav";
 import CoreServicesSection from "../../components/ai-solutions/core-services";
 import AdditionalServicesSection from "../../components/ai-solutions/additional-services";
 import CTASection from "../../components/ai-solutions/cta";
+import AiSolutionsFaqSection from "../../components/ai-solutions/faq-section";
 import { JsonLd } from "@/components/seo/json-ld";
 import type { Metadata } from "next";
 
@@ -37,8 +39,10 @@ export default function Services() {
     <>
       <JsonLd schema={aiSolutionsSchema} />
       <HeroSection />
+      <ServicesNav />
       <CoreServicesSection />
       <AdditionalServicesSection />
+      <AiSolutionsFaqSection />
       <CTASection />
 
       {/* <TrustBar /> */}

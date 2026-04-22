@@ -1,0 +1,22 @@
+⏺ No — Keywords Everywhere has no MCP interface and no public API. It's a pure browser extension
+  (Chrome/Firefox) that injects volume data directly onto Google search result pages. The data    
+  pipeline is: you search Google → the extension calls their API in the background → volume/CPC
+  appears inline. There's no way to programmatically query it outside the browser.
+                                                                                                  
+  Your search volume options that can be used programmatically:                                   
+                                                                                                  
+  ┌────────────────────────┬─────────────────────────┬───────────────────────────┐                
+  │          Tool          │      Access Method      │           Cost            │
+  ├────────────────────────┼─────────────────────────┼───────────────────────────┤                
+  │ Google Keyword Planner │ Manual in Google Ads UI │ Free                      │
+  ├────────────────────────┼─────────────────────────┼───────────────────────────┤
+  │ Keywords Everywhere    │ Browser extension only  │ $10/100K credits          │                
+  ├────────────────────────┼─────────────────────────┼───────────────────────────┤                
+  │ DataForSEO             │ REST API                │ Pay-per-use, ~$0.05/query │                
+  ├────────────────────────┼─────────────────────────┼───────────────────────────┤                
+  │ Ahrefs / Semrush       │ Web UI + limited API    │ $99+/mo                   │
+  └────────────────────────┴─────────────────────────┴───────────────────────────┘                
+  
+  For the SEO research I ran in this session, I used web searches to find People Also Ask patterns
+   and SERP context — that's the most reliable approach for AEO since it shows what Google is
+  actually surfacing. 

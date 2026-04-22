@@ -1,0 +1,388 @@
+[
+  {
+    "slug": "ai-integration",
+    "name": "AI Integration",
+    "metaTitle": "AI Integration Services for Small Business | Delray Beach, South Florida",
+    "metaDescription": "Connect ChatGPT, Claude, Zapier, and Make to the software your business already uses. AI integration for small businesses in Broward, Palm Beach, and Miami-Dade — built by a 30-year enterprise developer in Delray Beach.",
+    "heroHeadline": "AI Integration",
+    "heroTagline": "79% of small businesses want AI. Only 25% have actually implemented it. We close that gap — connecting the right tools to the systems you already use.",
+    "intro": "AI integration is the process of embedding artificial intelligence tools — ChatGPT, Claude, Zapier, Make, or n8n — into your existing business systems and workflows. Not replacing what works, but amplifying it. In 2026, this means more than automating a single task: agentic AI can now act autonomously across your entire operation, taking a lead from inquiry to booked appointment without a human in the loop. Small businesses that integrate these systems today are seeing productivity gains of 27 to 133 percent over teams that have not. We have been building enterprise integrations for 30 years — now applied to businesses your size, at prices that make sense.",
+    "bullets": [
+      {
+        "heading": "Works with software you already own",
+        "body": "We connect AI to your existing CRM, email platform, scheduling tool, accounting software, or custom systems via APIs and webhooks. QuickBooks, HubSpot, Google Workspace, Salesforce, Calendly — if it has an API, we can connect it. Your team keeps using familiar tools while AI works behind the scenes."
+      },
+      {
+        "heading": "Agentic AI — beyond simple automation",
+        "body": "2026 marks the shift from AI assistants that answer questions to AI agents that take action. An agentic integration can receive a lead, qualify them, check your calendar, book the appointment, send a confirmation, and update your CRM — without anyone touching a keyboard. This is what enterprise teams have had for years. We build it for small businesses."
+      },
+      {
+        "heading": "Time savings that compound",
+        "body": "Automating one repetitive task saves hours. Integrating AI across three or four workflows compounds those savings weekly. Most integrations we build recover their cost within two to three months through labor time recaptured — time your team can redirect to revenue-generating work."
+      },
+      {
+        "heading": "Decisions backed by data, not gut feel",
+        "body": "AI analyzes patterns across your operations — sales cycles, customer behavior, operational bottlenecks — and surfaces insights in plain language. Healthcare practices, real estate teams, and law firms in South Florida are using integrated AI dashboards to make faster, better-informed decisions every day."
+      },
+      {
+        "heading": "No technical staff required to maintain it",
+        "body": "Every integration we build is documented and handed off with training. We design for the business owner and their team, not for engineers. Ongoing support is available if something changes or needs to grow — but most clients operate independently from day one."
+      }
+    ],
+    "image": "/images/ai-integration.svg",
+    "imageBg": "#0A080D",
+    "accentColor": "#e91e62",
+    "serviceType": "Artificial Intelligence",
+    "faqs": [
+      {
+        "question": "What AI tools do you integrate for small businesses?",
+        "answer": "We work with the tools that best fit your requirements: OpenAI (ChatGPT), Anthropic (Claude), Google Gemini, Zapier, Make (formerly Integromat), n8n, and custom API integrations. We are tool-agnostic — we recommend based on your existing stack, budget, and goals, not vendor relationships."
+      },
+      {
+        "question": "What is agentic AI and should my small business use it?",
+        "answer": "Agentic AI refers to systems that take autonomous action across multiple steps — not just answering a question, but completing a workflow end-to-end. A lead comes in, the agent qualifies them, schedules a call, sends a confirmation, and logs everything in your CRM without human input. In 2026, this is accessible to small businesses through platforms like n8n, Make, and custom Claude integrations. Whether it is right for your business depends on your workflow volume — we assess this in the free strategy call."
+      },
+      {
+        "question": "Can AI integrate with my existing software like QuickBooks or HubSpot?",
+        "answer": "Yes. Most business software has an API or webhook capability. We connect AI to QuickBooks, HubSpot, Salesforce, Google Workspace, Calendly, Shopify, and hundreds of other platforms. Where direct API access is not available, we use automation platforms like Zapier or Make to bridge the gap."
+      },
+      {
+        "question": "How long does an AI integration project take?",
+        "answer": "Simple integrations — auto-routing emails, summarizing documents, generating reports — typically take one to two weeks. Multi-system integrations with custom logic and agentic workflows take four to six weeks. Every project is scoped before build work begins so you know the timeline and cost upfront."
+      },
+      {
+        "question": "How much does AI integration cost for a small business in South Florida?",
+        "answer": "Straightforward single-system integrations typically start in the $1,500 to $3,500 range. Multi-system agentic workflows run $4,000 to $10,000 depending on complexity. Every engagement starts with a free strategy call where we scope the work and give you a flat-fee estimate — no hourly billing surprises."
+      },
+      {
+        "question": "Will AI integration break the software I already use?",
+        "answer": "No. Integration adds capability to existing systems without disrupting them. We connect via APIs and webhooks so your team keeps using familiar software. We test every integration thoroughly in a staging environment before going live."
+      }
+    ]
+  },
+  {
+    "slug": "process-automation",
+    "name": "Process Automation",
+    "metaTitle": "Business Process Automation for Small Business | Delray Beach, South Florida",
+    "metaDescription": "Automate repetitive workflows and recover 10+ hours per week. Process automation consulting for small businesses in Broward, Palm Beach, and Miami-Dade — average ROI 240%, payback in 6 to 9 months.",
+    "heroHeadline": "Process Automation",
+    "heroTagline": "The average process automation project delivers 240% ROI with a 6 to 9 month payback. We build the ones that earn their cost back fastest.",
+    "intro": "Process automation uses software, AI, and digital tools to execute recurring, rule-based business tasks without human intervention. For South Florida small businesses, that means lead follow-ups that send themselves, invoices that generate on completion, onboarding checklists that run without a manager, and reports that appear in your inbox every Monday morning. Research shows businesses recover 25 to 50 percent of the cost of a manual process after automation — and labor savings represent only 30 to 40 percent of the total value. The rest lives in error reduction, faster cycle times, compliance risk mitigation, and capacity your team can redirect to growth. We have built process automation for Fortune 500 companies and government agencies. The same discipline, applied to your operation.",
+    "bullets": [
+      {
+        "heading": "Start with the processes costing you the most",
+        "body": "The best automation candidates are high-volume, rule-based, and currently done manually. Lead follow-up emails, appointment reminders, invoice generation, data entry between systems, employee onboarding checklists, and client intake forms. If your team does the same thing more than ten times per week, it pays to automate it."
+      },
+      {
+        "heading": "Built on platforms you can grow into",
+        "body": "We build on Zapier, Make, and n8n — the three most widely used automation platforms for small business. They connect to 5,000+ applications, scale as your business grows, and do not lock you into proprietary infrastructure you cannot access without us."
+      },
+      {
+        "heading": "Real ROI, measured before and after",
+        "body": "We document the time cost of every process before we automate it. After deployment, we measure again. Most clients recover the cost of their automation project within two to four months through time recaptured. High performers see three-year ROI of 200 to 500 percent."
+      },
+      {
+        "heading": "Industry-specific workflows for South Florida businesses",
+        "body": "Healthcare practices use automation for patient intake, appointment reminders, and post-visit follow-ups. Real estate teams automate lead qualification and listing update notifications. Law firms automate client onboarding and document collection. We understand the workflows specific to your industry."
+      },
+      {
+        "heading": "Error handling built in — nothing falls through the cracks",
+        "body": "Every automation we build includes monitoring and alerting. If a process fails, the right person is notified immediately with the context to resolve it. We build fallbacks so a broken automation never silently drops work or misses a deadline."
+      }
+    ],
+    "image": "/images/cog.svg",
+    "imageBg": "#023059",
+    "accentColor": "#ff5722",
+    "serviceType": "Business Process Automation",
+    "faqs": [
+      {
+        "question": "What is the ROI of business process automation for a small business?",
+        "answer": "Research shows an average ROI of 240 percent, with most businesses recouping their investment within six to nine months after deployment. Cost savings of 25 to 50 percent per automated process are typical. Importantly, labor savings represent only 30 to 40 percent of the total value — the remaining 60 to 70 percent comes from error reduction, faster processing, compliance risk mitigation, and employee capacity freed for higher-value work."
+      },
+      {
+        "question": "What business processes should I automate first?",
+        "answer": "Start with the processes that are highest-volume, most error-prone, and most time-consuming. For most South Florida service businesses, those are: lead follow-up and nurture sequences, appointment reminders, invoice generation and payment follow-up, client intake and onboarding, and weekly reporting. We prioritize by time-to-ROI in the strategy call."
+      },
+      {
+        "question": "How long does it take to automate a business process?",
+        "answer": "A single, well-defined process — like an appointment reminder sequence or an invoice generation workflow — typically takes one to two weeks to build, test, and deploy. More complex multi-step workflows connecting several systems take three to five weeks. We scope every project before we start so there are no timeline surprises."
+      },
+      {
+        "question": "Does process automation require replacing my current software?",
+        "answer": "Rarely. Most automation runs on top of your existing tools using Zapier, Make, or n8n as the connective layer. We connect the software you already use rather than replacing it — your team does not need to learn new systems."
+      },
+      {
+        "question": "What happens if an automated process breaks?",
+        "answer": "Every automation we build includes error handling and monitoring. If something fails, the right person on your team receives an immediate alert with the context needed to resolve it. We also build fallbacks so a broken automation does not silently drop work or miss a deadline."
+      },
+      {
+        "question": "Can you automate client-facing communications without them feeling robotic?",
+        "answer": "Yes — and this is one of the highest-ROI categories we work in. Follow-up sequences, appointment confirmations, proposal delivery, and review requests all run automatically but are written and configured to feel personal. We design the messaging before we build the automation, and you approve every template."
+      },
+      {
+        "question": "How much does business process automation cost in South Florida?",
+        "answer": "A single automation project typically runs $1,200 to $4,000 depending on complexity and the number of systems involved. Multi-process automation programs start around $5,000. Every engagement starts with a free strategy call where we scope the work, identify the two or three automations with the fastest payback, and give you a flat-fee estimate."
+      }
+    ]
+  },
+  {
+    "slug": "ai-chatbots",
+    "name": "AI Chatbots",
+    "metaTitle": "AI Chatbot Development for Small Business | Delray Beach, South Florida",
+    "metaDescription": "Custom AI chatbots for lead qualification, appointment booking, and 24/7 customer service. Built for small businesses in Broward, Palm Beach, and Miami-Dade. Basic bots from $5K — enterprise from $15K.",
+    "heroHeadline": "AI Chatbots",
+    "heroTagline": "Handle inquiries in English and Spanish, qualify leads, book appointments, and update your CRM — around the clock, without adding staff.",
+    "intro": "An AI chatbot is a digital assistant that understands and responds to customer inquiries in real time, using natural language processing to follow context, handle follow-up questions, and take action in your business systems. Unlike a basic FAQ bot that matches keywords to scripts, a properly built AI chatbot knows your business, speaks the way your team would, and escalates to a human at exactly the right moment. In 2026, the best chatbots are agentic — they do not just respond, they act: booking the appointment, updating the CRM, sending the confirmation, all without a human in the loop. For South Florida businesses serving a bilingual market, we build and configure chatbots that handle English and Spanish conversations equally well.",
+    "bullets": [
+      {
+        "heading": "Lead qualification and appointment booking",
+        "body": "The highest-ROI chatbot use case for service businesses. A prospect visits your site at 11pm, asks about your services, gets qualified, sees your availability, and books a call — all before you wake up. We deploy these for med spas, real estate agencies, law firms, and healthcare practices across Broward, Palm Beach, and Miami-Dade."
+      },
+      {
+        "heading": "24/7 customer service without adding headcount",
+        "body": "Your chatbot handles the repetitive first-contact questions — pricing, availability, service details, directions, hours — so your team can focus on the work that actually requires a human. Most service businesses see a 40 to 70 percent reduction in repetitive inquiry volume after deployment."
+      },
+      {
+        "heading": "English and Spanish — built for South Florida",
+        "body": "South Florida has one of the largest Spanish-speaking business communities in the United States. Every chatbot we build is configured to detect and respond in the language the customer is using. You do not lose a lead because your bot only speaks English."
+      },
+      {
+        "heading": "Deployed where your customers already are",
+        "body": "We deploy chatbots on your website, Google Business Profile, Facebook Messenger, WhatsApp, and SMS. Most deployments start with the website and expand to additional channels based on where your inquiries are coming from. No new platforms for your team to manage."
+      },
+      {
+        "heading": "Trained on your specific business — not generic responses",
+        "body": "Every chatbot we build is trained on your service catalog, pricing, policies, FAQs, and common objections. You review and approve the training content before the bot goes live. It answers as if it knows your business — because it does."
+      }
+    ],
+    "image": "/images/ai-chat-bot.svg",
+    "imageBg": "#012840",
+    "accentColor": "#673ab7",
+    "serviceType": "Conversational AI",
+    "faqs": [
+      {
+        "question": "How much does an AI chatbot cost for a small business?",
+        "answer": "Basic chatbots handling two to three use cases — FAQs, appointment booking, lead capture — typically run $5,000 to $15,000 to build and deploy. More sophisticated bots with CRM integration, agentic workflows, and multi-channel deployment run $15,000 to $30,000. We give you a flat-fee estimate after a free strategy call — no hourly billing."
+      },
+      {
+        "question": "What is the difference between an AI chatbot and a regular chatbot?",
+        "answer": "A regular chatbot matches keywords to scripted responses. Ask it something slightly different and it fails. An AI chatbot understands natural language, maintains conversation context across multiple exchanges, accesses your live business data, and knows when a question needs a human. The experience is closer to texting a knowledgeable staff member than clicking through a decision tree."
+      },
+      {
+        "question": "Can the chatbot book appointments for my business?",
+        "answer": "Yes — this is one of the most common deployments we build. The chatbot qualifies the prospect, checks your calendar (Google Calendar, Calendly, Acuity, and others), presents available times, books the appointment, sends a confirmation, and updates your CRM. The entire process happens without human involvement."
+      },
+      {
+        "question": "Can the chatbot handle Spanish-speaking customers?",
+        "answer": "Yes. Every chatbot we build for South Florida clients is configured for bilingual operation. The bot detects the language the customer is writing in and responds accordingly. Given the size of the Spanish-speaking market in Broward, Palm Beach, and Miami-Dade, this is standard practice on every deployment."
+      },
+      {
+        "question": "Where can the chatbot be deployed — website, text, social?",
+        "answer": "We deploy on your website (embedded widget), Google Business Profile, Facebook Messenger, WhatsApp, and SMS. The right combination depends on where your customers are already reaching out. Most businesses start with the website and add one or two additional channels based on inquiry data."
+      },
+      {
+        "question": "How long does it take to build and deploy a chatbot?",
+        "answer": "A focused chatbot handling two to three use cases typically takes two to four weeks from kickoff to live deployment. More complex builds with CRM integration and multi-channel deployment take four to eight weeks. We include a testing period and your approval before anything goes live."
+      },
+      {
+        "question": "Will a chatbot replace my customer service staff?",
+        "answer": "No — and we design it that way intentionally. The chatbot handles repetitive, first-contact inquiries so your team can focus on relationships, complex situations, and high-value interactions. Every bot we build includes a clean human escalation path so nothing that needs a person gets stuck in the bot."
+      }
+    ]
+  },
+  {
+    "slug": "ai-content-marketing",
+    "name": "AI Content & Marketing",
+    "metaTitle": "AI Marketing Automation for Small Business | Delray Beach, South Florida",
+    "metaDescription": "AI-powered content creation, email automation, and personalized marketing for small businesses in Broward, Palm Beach, and Miami-Dade. Human oversight built in — not AI alone.",
+    "heroHeadline": "AI Content & Marketing",
+    "heroTagline": "87% of marketers now use AI in their workflow. The businesses winning are the ones pairing AI speed with human judgment — not replacing one with the other.",
+    "intro": "AI content and marketing uses artificial intelligence to produce, personalize, and distribute the content your business needs to attract and retain customers — at a volume and consistency no small team can match manually. In 2026, 87 percent of marketers use generative AI in at least one workflow. But research is equally clear that AI alone is not enough: only 6 percent of businesses report significant content performance improvement from AI without human oversight. The winning formula is AI for speed and scale, human expertise for strategy, accuracy, and quality control. That is how we build every marketing system — and it is why clients see results where pure AI content generation disappoints. One important note for Florida businesses: state law now requires disclosure of AI-generated content in commercial marketing materials, with penalties of $1,000 to $10,000 per violation. We build compliance into every content workflow from day one.",
+    "bullets": [
+      {
+        "heading": "Content production without the blank-page problem",
+        "body": "AI generates first drafts of blog posts, email sequences, social captions, Google Business Profile updates, service descriptions, and ad copy. Your team reviews and approves — production time drops 60 to 80 percent without sacrificing quality or your brand voice. We configure every system with your tone guidelines and audience profile before a single word is generated."
+      },
+      {
+        "heading": "Email marketing that runs itself",
+        "body": "Welcome sequences, post-service follow-ups, re-engagement campaigns, appointment reminders, and review requests all run automatically through the platform you already use — Mailchimp, HubSpot, Klaviyo, or Constant Contact. We build the sequences, write the copy, configure the triggers, and hand you a system that markets while you work."
+      },
+      {
+        "heading": "Personalization at scale",
+        "body": "AI segments your contact list and personalizes content based on behavior, purchase history, and engagement patterns. Every contact receives a relevant message, not a mass broadcast. Personalized email sequences consistently outperform generic campaigns by 200 to 300 percent in response rates."
+      },
+      {
+        "heading": "Florida disclosure compliance built in",
+        "body": "Florida law now requires businesses to disclose AI-generated content in commercial marketing materials. Penalties run $1,000 to $10,000 per violation. We build disclosure workflows into every content system we configure — so you are protected without having to track compliance manually."
+      },
+      {
+        "heading": "Performance data that tells you what to do next",
+        "body": "AI-powered analytics surface which content is driving leads, which campaigns are converting, and where your audience disengages. You get a clear picture of what is working — updated automatically — so marketing decisions are based on data rather than instinct."
+      }
+    ],
+    "image": "/images/target.svg",
+    "imageBg": "#8C2703",
+    "accentColor": "#ff9800",
+    "serviceType": "Digital Marketing",
+    "faqs": [
+      {
+        "question": "Do I need to disclose when my marketing content is AI-generated?",
+        "answer": "Yes — in Florida, as of 2026, businesses are required to disclose AI-generated content in commercial marketing materials. Penalties run $1,000 to $10,000 per violation for unlabeled AI-generated audio, video, or image content used commercially. We build compliant disclosure workflows into every content system we configure so you are covered without having to manage it manually."
+      },
+      {
+        "question": "Will AI content hurt my Google rankings?",
+        "answer": "AI content that is accurate, useful, and written for a real audience performs well in search. Google evaluates content quality, not how it was produced. The risk is bulk, low-quality AI content with no human review — that is what gets penalized. Every piece of content we help produce goes through a human review step before publication."
+      },
+      {
+        "question": "Will AI-generated content sound generic or robotic?",
+        "answer": "Not when it is configured correctly. We build voice and tone guidelines into every AI content system before generating a single word. The output reflects your business and your audience — we refine it until it reads the way you want before anything is published or automated."
+      },
+      {
+        "question": "Can AI run my email marketing automatically?",
+        "answer": "Yes. We build automated email sequences for welcome flows, post-service follow-ups, re-engagement campaigns, and appointment reminders — connected to the platform you already use (Mailchimp, HubSpot, Klaviyo, Constant Contact). The sequences run on triggers, not a schedule, so every message goes out at the right moment in the customer relationship."
+      },
+      {
+        "question": "What types of content can AI produce for my business?",
+        "answer": "Blog posts, email newsletters, lead nurture sequences, social media captions, Google Business Profile posts and review responses, service page copy, ad copy, and FAQ content. The right mix depends on where your customers are and what is currently costing your team the most time."
+      },
+      {
+        "question": "How do I maintain control over what gets published?",
+        "answer": "You approve everything before it goes live. Every content workflow we build includes an explicit review step. Nothing publishes automatically without your sign-off until you have reviewed enough output to trust the system — and even then, we configure human checkpoints for anything that touches your brand publicly."
+      },
+      {
+        "question": "Does AI marketing work for businesses serving Spanish-speaking customers in South Florida?",
+        "answer": "Yes. We configure content systems to produce copy in both English and Spanish, and build email sequences that segment and communicate based on language preference. For South Florida businesses, this is a significant competitive advantage — most competitors are only marketing in English."
+      }
+    ]
+  },
+  {
+    "slug": "ai-strategy-consulting",
+    "name": "AI Strategy Consulting",
+    "metaTitle": "AI Strategy Consulting | Delray Beach & South Florida Small Business",
+    "metaDescription": "Get a clear AI roadmap before you spend a dollar on tools. AI consulting in Delray Beach serving Broward, Palm Beach, and Miami-Dade. One senior consultant, 30 years of enterprise experience.",
+    "heroHeadline": "AI Strategy Consulting",
+    "heroTagline": "Most small businesses buy AI tools they underuse. A strategy engagement tells you exactly what to build, in what order — before you spend anything.",
+    "intro": "AI strategy consulting is a structured advisory engagement that identifies where artificial intelligence creates measurable value in your specific business, which tools match your environment and budget, and what sequence of implementation delivers the fastest return. In South Florida, the market for AI consulting is crowded with firms staffed by junior consultants following a playbook. Geek at Your Spot is different: you work directly with Jeff Martin — 30 years of building enterprise systems for Fortune 500 companies and government agencies, now applied to businesses your size. No account managers, no offshore delivery teams, no upselling to services you do not need. One senior technologist who understands both the technology and the practical realities of running a small business. The free strategy call is where this starts — 30 minutes, your workflows on the table, a written summary in hand before you leave.",
+    "bullets": [
+      {
+        "heading": "Why strategy before tools — and why it matters",
+        "body": "The AI tools market in 2026 is saturated with compelling demos that solve problems you may not have. Without a strategy engagement first, most small businesses spend $500 to $2,000 per month on subscriptions they underuse within 90 days. A strategy engagement answers three questions: where does AI create real, measurable value in your operation; which tools match your data environment and budget; and what is the right order to build. That document saves you more than it costs."
+      },
+      {
+        "heading": "AI readiness assessment",
+        "body": "Before recommending a single tool, we evaluate your current software stack, data quality, workflow documentation, and team's technical comfort level. This identifies exactly what needs to happen before AI adoption succeeds — and prevents you from building on a foundation that will not hold."
+      },
+      {
+        "heading": "Use case prioritization by ROI",
+        "body": "We map every automatable process in your business, estimate the time and cost impact of each, and rank them by feasibility and return on investment. You leave the engagement knowing exactly which two or three implementations to build first — and why."
+      },
+      {
+        "heading": "Tool recommendations without vendor bias",
+        "body": "We recommend the tools that best fit your requirements — whether that is a $30/month Zapier subscription, a HubSpot workflow, or a custom Claude API integration. We will tell you when a simple off-the-shelf tool solves the problem better than a custom build. Our recommendations are based on your needs, not on what we earn from referrals."
+      },
+      {
+        "heading": "A written roadmap you own",
+        "body": "The strategy engagement produces a written AI roadmap: prioritized opportunity list, estimated ROI for each item, tool recommendations with total cost of ownership, data readiness gaps, and a phased implementation timeline. You own the document and can execute it with us or independently."
+      }
+    ],
+    "image": "/images/target.svg",
+    "imageBg": "#8C2703",
+    "accentColor": "#4cb04f",
+    "serviceType": "Management Consulting",
+    "faqs": [
+      {
+        "question": "How do I start with AI as a small business?",
+        "answer": "Start with a strategy conversation before buying anything. The biggest mistake small businesses make in 2026 is purchasing AI subscriptions based on a demo and then struggling to apply them to their actual workflows. A 30-minute strategy call with us identifies the two or three highest-impact opportunities specific to your business — and tells you whether you need a consultant or just a $30/month tool."
+      },
+      {
+        "question": "What does an AI consultant actually do?",
+        "answer": "A good AI consultant maps your workflows, identifies where AI creates measurable value, recommends the right tools for your specific environment, and either builds the implementation or gives you a clear enough roadmap to build it yourself. What they should not do is sell you a generic AI assessment that could apply to any business. Every engagement we run is specific to how your business actually operates."
+      },
+      {
+        "question": "What is the difference between an AI consultant and an AI vendor?",
+        "answer": "A vendor sells you their specific product. A consultant's job is to recommend the right solution regardless of who built it — even if that means telling you to use a competitor's tool or nothing at all. We are consultants. We have no vendor relationships that influence what we recommend."
+      },
+      {
+        "question": "Why should I hire a consultant in Delray Beach rather than a national firm?",
+        "answer": "Because national AI firms staff your project with junior consultants following a methodology built for enterprise clients. You work directly with Jeff Martin — 30 years of building production systems for Fortune 500 companies and government agencies. On-site discovery is available across Broward, Palm Beach, and Miami-Dade. You get senior-level thinking applied to your specific business, not a 40-page report generated from a template."
+      },
+      {
+        "question": "What does an AI strategy engagement cost?",
+        "answer": "Strategy engagements are typically $2,500 to $5,000 depending on business complexity and scope. The deliverable is a written AI roadmap you own. Most clients find it pays for itself in the first avoided tool purchase. The free strategy call is genuinely free — no obligation and no sales pressure."
+      },
+      {
+        "question": "What is an AI readiness assessment?",
+        "answer": "An AI readiness assessment evaluates your current software stack, data quality, workflow documentation, and team capabilities to determine what needs to happen before AI adoption will succeed. It prevents you from building automation on a shaky foundation — and identifies the quick wins available right now with your current setup."
+      },
+      {
+        "question": "Is AI strategy consulting right for a very small business?",
+        "answer": "Especially for a very small business. A solo operator or five-person team has less margin for wasted technology spend than a large company. A strategy engagement ensures you invest in the one or two automations that make the biggest difference rather than experimenting broadly with tools that do not connect to your real workflow problems."
+      }
+    ]
+  },
+  {
+    "slug": "security-compliance",
+    "name": "Security & Compliance",
+    "metaTitle": "AI Security & Compliance for Small Business | Delray Beach, South Florida",
+    "metaDescription": "Florida's 2026 AI disclosure law carries $1,000–$10,000 fines per violation. Cyber insurance now excludes AI breaches. HIPAA, CCPA, and shadow AI risks for South Florida small businesses — we handle all of it.",
+    "heroHeadline": "Security & Compliance",
+    "heroTagline": "Florida's 2026 AI disclosure law is in effect. Cyber insurance is excluding AI breaches. Shadow AI is exposing client data. Most small businesses do not know they have a problem until it is too late.",
+    "intro": "AI security and compliance has moved from an enterprise concern to a small business requirement — faster than most business owners realize. In 2026, Florida passed legislation requiring businesses to disclose AI-generated content in commercial marketing materials, with penalties of $1,000 to $10,000 per violation. Cyber insurance policies are now including AI exclusions: if a data breach occurs because an employee pasted client data into ChatGPT, your standard policy may not cover the claim. CCPA enhanced requirements now cover automated decision-making as of January 1, 2026. And shadow AI — the AI tools your employees are using without IT awareness — is quietly exposing client data to external training models every day. For healthcare practices, law firms, real estate agencies, and financial services businesses in South Florida, the compliance risk is real and it is current. We identify it before it becomes a claim, a fine, or a breach.",
+    "bullets": [
+      {
+        "heading": "Florida 2026 AI disclosure law — are you compliant?",
+        "body": "Florida now requires businesses to disclose AI-generated content in commercial marketing materials — audio, video, and images. Penalties run $1,000 to $10,000 per violation. If your business uses AI to produce any customer-facing content, compliance is not optional. We audit your current content workflows and build compliant disclosure processes that protect you without creating friction in your marketing operations."
+      },
+      {
+        "heading": "Cyber insurance and AI exclusions",
+        "body": "2026 cyber insurance policies are increasingly including exclusions for AI-related breaches. If an employee pastes proprietary client data into an unauthorized AI tool and that data is exposed, your standard policy may not respond. We help you document AI usage policies and obtain the right coverage — including specific riders for AI governance where required."
+      },
+      {
+        "heading": "Shadow AI — the risk you may not know you have",
+        "body": "Shadow AI refers to the AI tools your team uses without IT or management awareness: free ChatGPT accounts, browser extensions with AI features, third-party automation tools. When employees paste client records, contracts, or financial data into these tools, it may be used to train external models — violating your confidentiality agreements and potentially triggering HIPAA, CCPA, or GDPR liability. We identify shadow AI usage and establish governance policies that protect you."
+      },
+      {
+        "heading": "HIPAA, CCPA, and GDPR for AI systems",
+        "body": "If your AI vendor accesses, processes, or stores protected health information, they are automatically subject to HIPAA and must sign a Business Associate Agreement. CCPA's 2026 enhancements now cover automated decision-making systems. GDPR applies to any South Florida business serving EU customers. We determine which regulations apply to your specific AI stack and implement the required controls."
+      },
+      {
+        "heading": "Audit trails and documentation that protect you",
+        "body": "If a regulator audits your AI use, you need documentation: how your models were configured, what data they access, what decisions they influence, and who has oversight. We build the audit trail and governance documentation that demonstrates compliance — before you need to produce it under pressure."
+      }
+    ],
+    "image": "/images/ai-integration.svg",
+    "imageBg": "#023059",
+    "accentColor": "#795548",
+    "serviceType": "IT Security",
+    "faqs": [
+      {
+        "question": "What are the AI regulations in Florida in 2026?",
+        "answer": "Florida passed legislation in 2026 requiring businesses to disclose AI-generated content in commercial marketing materials — specifically audio, video, and images created or significantly altered by AI. Penalties run $1,000 to $10,000 per violation. Additionally, any business using automated decision-making systems faces enhanced obligations under CCPA if they serve California customers, and GDPR obligations if they serve EU customers. Florida also has broader data privacy laws that interact with AI data processing."
+      },
+      {
+        "question": "Does my cyber insurance cover AI-related data breaches?",
+        "answer": "Possibly not. In 2026, many cyber insurance policies include exclusions for breaches caused by unauthorized AI tool use — for example, an employee pasting client data into a free ChatGPT account. Standard policies may require a specific AI governance policy and rider to cover these scenarios. We help you understand your current coverage gaps and document the AI governance policies your insurer requires."
+      },
+      {
+        "question": "Is my business HIPAA-compliant if I use ChatGPT or Claude?",
+        "answer": "Only if you have a Business Associate Agreement (BAA) in place with the AI vendor and are using an enterprise tier that meets HIPAA technical safeguard requirements. OpenAI and Anthropic both offer HIPAA-eligible tiers with BAAs — but the standard free and consumer plans are not HIPAA compliant. If your staff is using consumer AI tools with patient data, you have a compliance exposure right now."
+      },
+      {
+        "question": "What is shadow AI and why does it matter for my business?",
+        "answer": "Shadow AI is the AI tools your employees use without IT or management awareness — free ChatGPT accounts, Grammarly, browser AI extensions, third-party automation tools. When staff paste client records, contracts, or financial data into these tools, that data may be used to train external models, stored on servers outside your security perimeter, or exposed in a breach. For businesses handling sensitive client data, shadow AI is one of the most common unmanaged compliance risks in 2026."
+      },
+      {
+        "question": "Do I need to tell customers when I use AI to make decisions about them?",
+        "answer": "Under CCPA's 2026 enhancements, businesses using automated decision-making technology must provide disclosure and, in some cases, an opt-out mechanism. This applies to automated lead scoring, pricing algorithms, creditworthiness assessments, and similar systems. If you are using AI to make or influence decisions that affect customers, disclosure obligations likely apply. We determine exactly what is required for your specific use cases."
+      },
+      {
+        "question": "What industries face the highest AI compliance risk in South Florida?",
+        "answer": "Healthcare practices (HIPAA — patient data in AI tools), legal firms (attorney-client privilege and confidentiality), financial services (GLBA, SOC 2), real estate (RESPA, state licensing regulations), and any business serving California customers (CCPA) or EU customers (GDPR). If you are unsure which regulations apply to your AI use, that is precisely what our initial compliance assessment answers."
+      },
+      {
+        "question": "Is AI compliance a one-time project or ongoing?",
+        "answer": "Both. The initial assessment and control implementation is a defined project with a clear deliverable. Maintaining compliance is ongoing — regulations changed significantly in 2026 and will continue to evolve, your AI stack will grow, and new tools will get adopted. We offer periodic review engagements so your controls stay current without requiring a full audit every year."
+      }
+    ]
+  }
+]
