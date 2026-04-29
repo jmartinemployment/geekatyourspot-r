@@ -54,3 +54,6 @@ app/about-backup/
 app/blog-backup/
 app/email-config-backup/
 app/services-detail-backup/
+_wp-reference/
+
+/lib/generated/prisma

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getDepartmentContent, getCaseStudy } from "@/services/department.service";
 
 const departmentHeroImages: Record<string, string> = {
   accounting: "/images/case-studies/heroes/accounting.jpg",
@@ -9,34 +10,30 @@ const departmentHeroImages: Record<string, string> = {
   operations: "/images/case-studies/heroes/operations.jpg",
   sales: "/images/case-studies/heroes/sales.jpg",
 };
-const departmentHeadline: Record<string, string> = {
-  accounting: "Accounting",
-  "customer-service": "/images/case-studies/heroes/customer-service.jpg",
-  "human-resources": "/images/case-studies/heroes/human-resources.jpg",
-  marketing: "/images/case-studies/heroes/marketing.jpg",
-  operations: "/images/case-studies/heroes/operations.jpg",
-  sales: "/images/case-studies/heroes/sales.jpg",
-};
-const defaultHero = "/images/case-studies/heroes/default.jpg";
-const defaultHeadline = "";
+
 interface CaseStudyHeroSectionProps {
-  readonly departmentSlug: string;
+  readonly slug: string;
 }
 
-export default function CaseStudyHeroSection({
-  departmentSlug,
-}: CaseStudyHeroSectionProps): React.JSX.Element {
-  const heroImage = departmentHeroImages[departmentSlug] ?? defaultHero;
-  const headline = departmentHeadline[departmentSlug] ?? defaultHeadline;
+export async function CaseStudyHeroSection({ slug }: CaseStudyHeroSectionProps): Promise<React.JSX.Element> {
+  const [caseStudy, departments] = await Promise.all([
+    getCaseStudy(slug),
+    getDepartmentContent(),
+  ]);
 
+  const title = caseStudy?.descriptiveName ?? "";
+  const parentDepartment = departments.find((dept) =>
+    dept.useCases.some((uc) => uc.caseStudy.slug === slug),
+  );
+  const heroImage = departmentHeroImages[parentDepartment?.slug ?? ""] ?? "/images/case-studies/heroes/accounting.jpg";
   return (
     <section className="home-hero w-full min-h-screen bg-[#023059]">
       <div className="grid grid-cols-2 content-center gap-4 items-center min-h-screen container">
         <div>
           <h1 className="text-white text-[5.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
-            Artificial Intelligence&nbps;{headline}
+            Artificial Intelligence
             <br />
-            <span className="text-[#8C2703]">Case Study</span>
+            <span className="text-[#8C2703]">{title}</span>
           </h1>
           <p className="text-white shadow-text text-xl pt-5">
             How Organizations Turn AI into Measurable ROI
@@ -54,7 +51,8 @@ export default function CaseStudyHeroSection({
             Book a Free Strategy Call
           </Link>
         </div>
-        <div className="flex items-center justify-center min-h-screen">
+
+          <div className="flex items-center justify-center min-h-screen">
           <Image
             src={heroImage}
             priority

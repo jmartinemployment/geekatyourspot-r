@@ -41,6 +41,8 @@ Stack:   Next.js 16.2 App Router / React 19.2 / TypeScript 5 strict
 Styling: Tailwind CSS 4 / shadcn/ui 4.1
 Motion:  Motion 12.38 (Framer Motion successor)
 Auth:    OAuth 2.0 / OIDC via [Auth.js v5 | NextAuth | Auth0 — choose one]
+Backend: C# .NET API with Microsoft Entity Framework (hosted on Railway)
+API URL: https://geekbackend-production.up.railway.app
 Lint:    ESLint flat config + Prettier + SonarQube
 Tests:   Vitest + React Testing Library + Playwright
 Node:    >=22.x LTS
@@ -64,6 +66,22 @@ Node:    >=22.x LTS
 | eslint | 9.x | Flat config |
 | vitest | 2.x | — |
 | playwright | 1.x | — |
+
+### Backend ORM
+
+The data layer is a **C# .NET API** using **Microsoft Entity Framework** hosted on Railway.
+The Next.js frontend NEVER accesses the database directly — all data access goes through the REST API.
+
+```
+Backend API: https://geekbackend-production.up.railway.app
+ORM:         Microsoft Entity Framework (C# .NET)
+DB:          PostgreSQL via Supabase (mpnruwauxsqbrxvlksnf)
+```
+
+**API conventions:**
+- Request bodies use **PascalCase** field names (C# serialization default)
+- Response bodies use **camelCase** field names (JSON serialization)
+- All DB writes go through API endpoints — never bypass with direct Supabase calls
 
 ### Prohibited Packages
 
@@ -754,11 +772,12 @@ export function PageTransition({ children }: { children: React.ReactNode }) {
 import NextAuth from 'next-auth';
 import GitHub from 'next-auth/providers/github';
 import Google from 'next-auth/providers/google';
-import { PrismaAdapter } from '@auth/prisma-adapter';
 import { db } from '@/lib/db';
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  adapter: PrismaAdapter(db),
+  // Adapter: use a database adapter compatible with your auth store.
+  // PrismaAdapter has been removed — Entity Framework owns the DB layer.
+  // Use a custom JWT strategy or a Supabase-compatible adapter.
   providers: [
     GitHub({
       clientId: process.env.AUTH_GITHUB_ID,
@@ -1535,7 +1554,7 @@ const cspHeader = `
 `;
 
 // Input validation — ALL user input through Zod before use
-// SQL injection — never raw queries (use Prisma ORM)
+// SQL injection — never raw queries; all DB access is via the Entity Framework backend API
 // XSS — never dangerouslySetInnerHTML (ESLint rule enforced)
 // CSRF — Server Actions use built-in Next.js CSRF protection
 // Secrets — NEVER in client bundles (no NEXT_PUBLIC_ for secrets)
@@ -1735,5 +1754,5 @@ response.
 
 ---
 
-*Last updated: 2026-04-14 | Stack: Next.js 16.2 / React 19.2 / TypeScript 5 / Tailwind 4 / shadcn/ui 4.1 / Motion 12.38*
+*Last updated: 2026-04-24 | Stack: Next.js 16.2 / React 19.2 / TypeScript 5 / Tailwind 4 / shadcn/ui 4.1 / Motion 12.38 / Entity Framework (C# .NET backend on Railway)*
 *Owner: [PROJECT_LEAD] | Review cycle: Quarterly or on major version bump*
