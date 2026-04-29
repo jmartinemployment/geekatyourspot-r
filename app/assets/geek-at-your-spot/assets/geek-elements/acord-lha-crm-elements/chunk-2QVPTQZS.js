@@ -1,1 +1,0 @@
-import{a}from"./chunk-S6MLMD62.js";import"./chunk-MYYGYGSC.js";import"./chunk-KBH2XBO6.js";import"./chunk-3LWO7UIO.js";import"./chunk-MHCL6BZF.js";import"./chunk-NRF2IZBU.js";export{a as HoldingListComponent};
