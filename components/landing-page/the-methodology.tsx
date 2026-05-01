@@ -208,7 +208,7 @@ export default function TheMethodologySection() {
         </div> */}
       </section>
 
-      <section className="bg-[#023059] min-h-screen hidden lg:block py-7">
+      <section className="bg-[#024873] min-h-screen hidden lg:block py-7">
         <div className="container min-h-screen">
           <div className="grid grid-cols-12 place-items-center min-h-screen">
             <div className="col-span-6 min-h-screen">

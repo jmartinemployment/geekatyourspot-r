@@ -10,12 +10,14 @@ interface FaqSectionProps {
   title?: string;
   subtitle?: string;
   faqs: FaqItem[];
+  className?: string;
 }
 
 export default function FaqSection({
   title = "Common Questions",
   subtitle,
   faqs,
+  className,
 }: FaqSectionProps): React.JSX.Element {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -30,11 +32,13 @@ export default function FaqSection({
     })),
   };
 
+  const sectionClass = ["w-full bg-[#023059] py-20 px-4", className].filter(Boolean).join(" ");
+
   return (
-    <section className="w-full bg-[#023059] py-20 px-4">
+    <section className={sectionClass}>
       <JsonLd schema={faqSchema} />
       <div className="container mx-auto max-w-3xl">
-        <h2 className="text-white font-[var(--font-sora)] font-black text-4xl md:text-5xl leading-tight mb-4">
+        <h2 className="text-white font-(--font-sora) font-black text-4xl md:text-5xl leading-tight mb-4">
           {title}
         </h2>
         {subtitle && (

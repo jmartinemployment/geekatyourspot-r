@@ -17,11 +17,13 @@
     "@hookform/resolvers": "^5.2.2",
     "@hugeicons/core-free-icons": "^4.0.0",
     "@hugeicons/react": "^1.1.6",
+    "@prisma/client": "^7.8.0",
     "@tanstack/react-table": "^8.21.3",
     "ai": "^6.0.158",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+    "dotenv": "^17.4.2",
     "embla-carousel-react": "^8.6.0",
     "googleapis": "^171.4.0",
     "lucide-react": "^1.7.0",
@@ -43,6 +45,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -50,6 +53,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "prisma": "^7.8.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

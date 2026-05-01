@@ -41,7 +41,7 @@ const faqs: FaqItem[] = [
 
 export default function ContactFaqSection(): React.JSX.Element {
   return (
-    <FaqSection
+    <FaqSection className=""
       title="Before You Book"
       subtitle="The questions worth answering before we get on a call."
       faqs={faqs}

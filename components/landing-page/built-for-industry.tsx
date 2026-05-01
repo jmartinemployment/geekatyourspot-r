@@ -171,35 +171,7 @@ export default function BuiltForIndustrySection() {
               <CardDescription className="my-0 py-0"></CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="list-disc text-lg text-black shadow-text pt-1">
-                <li>
-                  <p>
-                    <strong>Fraud Detection:</strong> Monitor transactions in
-                    real time to spot anomalies or unnecessary spending.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Automated Invoicing:</strong> Use optical character
-                    recognition (OCR) mixed with AI to extract data from
-                    physical or digital invoices and reconcile them with
-                    purchase orders.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Report Generation:</strong> Summarize complex
-                    financial documents and variance analyses into plain-text
-                    executive summaries.
-                  </p>
-                </li>
-              </ul>
-              <p className="text-medium shadow-text">
-                Streamline workflows by automating repetitive tasks like data
-                entry, invoicing, and document management. Optimize supply
-                chains, predict issues before they happen, and keep your
-                business running efficiently.
-              </p>
+
             </CardContent>
           </Card>
         </div>

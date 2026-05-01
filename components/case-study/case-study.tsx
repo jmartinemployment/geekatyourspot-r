@@ -1,7 +1,10 @@
 import type { Department } from "@/lib/types/departments";
 import type { CaseStudy } from "@/lib/types/case_study";
 import Link from "next/link";
-import { getDepartmentContent, getCaseStudy } from "@/services/department.service";
+import {
+  getDepartmentContent,
+  getCaseStudy,
+} from "@/services/department.service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -16,11 +19,12 @@ import {
 interface CaseStudySectionProps {
   readonly slug: string;
 }
-export async function CaseStudySection ({ slug,}: CaseStudySectionProps): Promise<React.JSX.Element> {
-  
+export async function CaseStudySection({
+  slug,
+}: CaseStudySectionProps): Promise<React.JSX.Element> {
   const caseStudy = await getCaseStudy(slug);
   const departments = await getDepartmentContent();
-
+  const subTitle = caseStudy?.subtitle ?? "";
   const departmentColors: Record<string, string> = {
     accounting: "text-brand-blue",
     "customer-service": "text-brand-teal-blue",
@@ -38,50 +42,28 @@ export async function CaseStudySection ({ slug,}: CaseStudySectionProps): Promis
     operations: faRobot,
     sales: faShieldHalved,
   };
-  return (
-    <section className="w-full min-h-screen bg-#FFFFFF py-5">
+  return (  
+    <section className="w-full min-h-screen py-5">
       <div className="grid grid-cols-12 gap-4 container">
+        <div key={caseStudy!.id} className="col-span-9 bg-brand-frost-aqua px-5 py-5">
+          <h2 className="text-5xl font-bold shadow-text">
+            {caseStudy!.subtitle}
+          </h2>
+          <p className="text-2xl shadow-text">{caseStudy!.trigger}</p>
+          <h3 className="text-xl font-bold">Problem</h3>
+          <p className="text-lg shadow-text">{caseStudy!.problemChallenge}</p>
+          <h3 className="font-bold">Solution</h3>
+          <p className="text-lg shadow-text">{caseStudy!.solution}</p>
+          <p className="font-bold">Post Conditions</p>
+          <p className="text-lg shadow-text">{caseStudy!.postConditions}</p>
 
-            <div key={caseStudy!.id} className="col-span-9">
 
-              <p className="font-bold">DescriptiveName</p>
-              <h2 className="text-xl font-bold shadow-text">
-                {caseStudy!.descriptiveName}
-              </h2>
-              <p className="font-bold">Executive Summary</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.executiveSummary  }
-              </p>
-              <p className="font-bold">Industry Citation</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.industryCitation  }
-              </p>
-              <p className="font-bold">Post Conditions</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.postConditions  }
-              </p>
-              <p className="font-bold">Primary Actor</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.primaryActor  }
-              </p>
-              <p className="font-bold">Problem/Challenge</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.problemChallenge  }
-              </p>
-              <p className="font-bold">Slug</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.slug  }
-              </p>
-              <p className="font-bold">Solution</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.solution  }
-              </p>
-              <p className="font-bold">Trigger</p>
-              <p className="text-lg shadow-text">
-                {caseStudy!.trigger  }
-              </p>
-      </div>              </div>
+          <p className="font-bold text-xs">Industry Citation</p>
+          <p className="text-xs shadow-text">{caseStudy!.industryCitation}</p>
 
+
+        </div>{" "}
+      </div>
     </section>
   );
 }

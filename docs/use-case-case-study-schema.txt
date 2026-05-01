@@ -1,0 +1,67 @@
+full normalized schema based on your clarifications:                    
+                                                                          
+departments — source of truth for the six tabs in the UI                                  
+  id               serial          PRIMARY KEY                                              
+  name             varchar(100)    NOT NULL                                                 
+  slug             varchar(100)    NOT NULL UNIQUE                                          
+  description      text            NOT NULL                                                 
+  icon_name        varchar(100)                    -- FontAwesome icon reference            
+  sort_order       integer         NOT NULL DEFAULT 0       
+  created_at       timestamptz     NOT NULL DEFAULT now()                                   
+   
+  ---                                                                                       
+  use_cases — one per department scenario, teases the linked case study
+  id               serial          PRIMARY KEY                                              
+  department_id    integer         NOT NULL REFERENCES departments(id)
+  case_study_id    integer                  REFERENCES case_studies(id)  -- nullable until  
+  linked                                                                                  
+  descriptive_name varchar(255)    NOT NULL                                                 
+  slug             varchar(255)    NOT NULL UNIQUE          
+  summary          text            NOT NULL        -- the teaser copy shown in the tab      
+  created_at       timestamptz     NOT NULL DEFAULT now()                                   
+  updated_at       timestamptz     NOT NULL DEFAULT now()
+                                                                                            
+  ---                                                                                       
+  case_studies — the full page, linked from a use case
+  id                serial          PRIMARY KEY                                             
+  descriptive_name  varchar(255)    NOT NULL                
+  slug              varchar(255)    NOT NULL UNIQUE                                         
+  status            varchar(20)     NOT NULL DEFAULT 'draft'  -- draft | published |
+  archived                                                                          
+  executive_summary text            NOT NULL                                                
+  primary_actor     varchar(150)    NOT NULL       -- e.g. "Practice Owner", "Sales Manager"
+  trigger           text            NOT NULL       -- what initiated the engagement         
+  problem_challenge text            NOT NULL                                                
+  solution          text            NOT NULL
+  post_conditions   text                                                                    
+  exceptions        text                                    
+  industry_citation varchar(150)                   -- cited only, not a FK
+  created_at        timestamptz     NOT NULL DEFAULT now()                
+  updated_at        timestamptz     NOT NULL DEFAULT now()                                  
+  published_at      timestamptz
+                                                                                            
+  ---                                                       
+  case_study_metrics — one-to-many, each case study has multiple metrics                    
+  id               serial          PRIMARY KEY                                              
+  case_study_id    integer         NOT NULL REFERENCES case_studies(id)
+  metric_label     varchar(150)    NOT NULL        -- "Call volume reduction"               
+  metric_value     varchar(50)     NOT NULL        -- "68%"                  
+  metric_unit      varchar(50)                     -- optional additional context           
+  sort_order       integer         NOT NULL DEFAULT 0
+                                                                                            
+  ---                                                       
+  case_study_actors — all stakeholders involved                                             
+  id               serial          PRIMARY KEY              
+  case_study_id    integer         NOT NULL REFERENCES case_studies(id)
+  actor_name       varchar(150)    NOT NULL        -- "Practice Owner"                      
+  actor_role       varchar(50)     NOT NULL        -- "Primary" | "Secondary"
+  sort_order       integer         NOT NULL DEFAULT 0                                       
+                                                                                            
+  ---
+  case_study_event_flow_steps — the ordered event flow, optionally tied to an actor         
+  id               serial          PRIMARY KEY                                              
+  case_study_id    integer         NOT NULL REFERENCES case_studies(id)
+  step_number      integer         NOT NULL                                                 
+  step_description text            NOT NULL                                                 
+  step_actor_id    integer                  REFERENCES case_study_actors(id)
+  UNIQUE (case_study_id, step_number)                

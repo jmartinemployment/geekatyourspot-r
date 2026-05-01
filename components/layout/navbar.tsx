@@ -7,6 +7,7 @@ import Link from "next/link";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "AI Solutions", href: "/ai-solutions" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "Services", href: "/services/ai-integration", children: [
     { label: "AI Integration", href: "/services/ai-integration" },
     { label: "Process Automation", href: "/services/process-automation" },

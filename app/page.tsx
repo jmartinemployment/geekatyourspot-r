@@ -6,7 +6,9 @@ import HomeFaqSection from "@/components/landing-page/faq-section";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { SchedulerShell } from "@/components/landing-page/scheduler/scheduler-shell";
+import { UseCasesSection } from "@/components/landing-page/use-cases";
 import { JsonLd } from "@/components/seo/json-ld";
+
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -51,7 +53,9 @@ export default function Home() {
       <JsonLd schema={[websiteSchema, aiConsultingServiceSchema]} />
       <HeroSection />
       <CloneYourselfSection />
+      <UseCasesSection />
       <TheMethodologySection />
+      <SeamlessIntegrationsSection />
       <Suspense>
         <SchedulerShell />
       </Suspense>
