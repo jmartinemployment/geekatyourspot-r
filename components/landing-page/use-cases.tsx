@@ -258,7 +258,7 @@ export async function UseCasesSection(): Promise<React.JSX.Element> {
             </p>
           </div>
         </div>
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#7ED0D9]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#8C4E2A]">
           <FontAwesomeIcon
             icon={faFunnelDollar}
             width={256}

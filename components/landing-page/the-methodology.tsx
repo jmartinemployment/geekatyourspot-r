@@ -17,7 +17,7 @@ import {
 export default function TheMethodologySection() {
   return (
     <>
-      <section className="w-full bg-[#023059] min-h-screen py-5 lg:hidden">
+      <section className="w-full bg-[#0C1A26] min-h-screen py-5 lg:hidden">
         <div className="container">
           <div className="grid grid-cols-1">
             <div className="col-span-full">
@@ -208,7 +208,7 @@ export default function TheMethodologySection() {
         </div> */}
       </section>
 
-      <section className="bg-[#024873] min-h-screen hidden lg:block py-7">
+      <section className="bg-[#0C1A26] min-h-screen hidden lg:block py-7">
         <div className="container min-h-screen">
           <div className="grid grid-cols-12 place-items-center min-h-screen">
             <div className="col-span-6 min-h-screen">
