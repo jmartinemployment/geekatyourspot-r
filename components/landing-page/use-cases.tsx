@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { getDepartmentContent } from "@/services/department.service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -39,16 +38,19 @@ const departmentIcons: Record<string, IconDefinition> = {
 export async function UseCasesSection(): Promise<React.JSX.Element> {
 
   return (
-    <section className="w-full bg-[#0A080D] min-h-screen py-5 hidden lg:block">
+    <section className="w-full bg-[#025E73] min-h-screen py-5 hidden lg:block">
       <div className="grid grid-cols-1 container mb-5">
         <div className="col-span-full">
           <h2 className="text-white lg:text-7xl xl:text-[6.5rem] leading-[0.95] font-black font-[var(--font-sora)] shadow-text">
-            Artificial Intelligence Use&nbsp;<span className="text-[#8C2703] shadow-text">Cases</span>
+            Artificial<br />
+            Intelligence <br />
+            Use<br />
+            <span className="text-[#8C2703] shadow-text">Cases</span>
           </h2>
         </div>
       </div>
       <div className="grid grid-cols-12 gap-4 container">
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#1F51FF]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#023059]">
           <FontAwesomeIcon
             icon={faCalculator}
             width={256}
@@ -159,7 +161,7 @@ export async function UseCasesSection(): Promise<React.JSX.Element> {
             </p>
           </div>
         </div>
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#FF0000]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#024059]">
           <FontAwesomeIcon
             icon={faBellConcierge}
             width={256}
@@ -170,7 +172,7 @@ export async function UseCasesSection(): Promise<React.JSX.Element> {
             Customer Service
           </p>
         </div>
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#104040]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#0C1A26]">
           <FontAwesomeIcon
             icon={faUsersBetweenLines}
             width={256}
@@ -256,7 +258,7 @@ export async function UseCasesSection(): Promise<React.JSX.Element> {
             </p>
           </div>
         </div>
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#FFBF00]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#7ED0D9]">
           <FontAwesomeIcon
             icon={faFunnelDollar}
             width={256}
@@ -268,7 +270,7 @@ export async function UseCasesSection(): Promise<React.JSX.Element> {
           </p>
         </div>
 
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#EC5800]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#8C2703]">
           <FontAwesomeIcon
             icon={faRobot}
             width={256}
@@ -367,7 +369,7 @@ export async function UseCasesSection(): Promise<React.JSX.Element> {
             </p>
           </div>
         </div>
-        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#330066]">
+        <div className="col-span-6 flex flex-col items-center justify-center py-5 bg-[#D97D5B]">
           <FontAwesomeIcon
             icon={faTag}
             width={256}

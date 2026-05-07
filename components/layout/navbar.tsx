@@ -110,7 +110,7 @@ export default function Navbar() {
           </div>
 
           {/* Sidebar nav */}
-          <nav className="p-4 bg-[rgba(255,255,255,1)]">
+          {/* <nav className="p-4 bg-[rgba(255,255,255,1)]">
             <ul className="list-none m-0 p-0 space-y-1">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -139,7 +139,7 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-          </nav>
+          </nav> */}
         </aside>
       </header>
   );

@@ -56,18 +56,8 @@ next-env.d.ts
 backup*.sql
 _wp-reference/
 app/assets/
-
-# Claude Code (local only)
-.claude/
+/claude/
+.claude
 .claudeignore
-.graphifyignore
-.mcp.json
 CLAUDE.md
-CLAUDE.local.md
 CLAUDE.local.md.example
-claude/
-
-# test/scratch directories
-clear/
-clearnpm/
-*-workspace-test/

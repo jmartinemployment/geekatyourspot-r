@@ -1,0 +1,97 @@
+0 verbose cli /Users/jam/.nvm/versions/node/v24.14.1/bin/node /Users/jam/.nvm/versions/node/v24.14.1/bin/npm
+1 info using npm@11.11.0
+2 info using node@v24.14.1
+3 silly config load:file:/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Volumes/Seagate/development/geekatyourspot-r/.npmrc
+5 silly config load:file:/Users/jam/.npmrc
+6 silly config load:file:/Users/jam/.nvm/versions/node/v24.14.1/etc/npmrc
+7 verbose title npm install
+8 verbose argv "-cache" "clearnpm" "install"
+9 verbose logfile logs-max:10 dir:/Volumes/Seagate/development/geekatyourspot-r/clearnpm/_logs/2026-03-31T13_00_45_350Z-
+10 verbose logfile /Volumes/Seagate/development/geekatyourspot-r/clearnpm/_logs/2026-03-31T13_00_45_350Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest framer-motion@10.9.1
+15 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/npm 196ms
+17 http fetch GET 200 https://registry.npmjs.org/framer-motion 361ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/framer-motion set size:undefined disposed:false
+19 silly fetch manifest react@19.2.4
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/react 120ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+23 silly fetch manifest react@^18.0.0
+24 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+25 http cache https://registry.npmjs.org/react 87ms (cache hit)
+26 silly packumentCache full:https://registry.npmjs.org/react set size:6573158 disposed:false
+27 silly fetch manifest react-dom@19.2.4
+28 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/react-dom 142ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+31 silly fetch manifest react-dom@^18.0.0
+32 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+33 http cache https://registry.npmjs.org/react-dom 9ms (cache hit)
+34 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8735853 disposed:false
+35 silly placeDep ROOT framer-motion@10.9.1 REPLACE for: geekatyourspot-r@0.1.0 want: 10.9.1
+36 silly fetch manifest @emotion/is-prop-valid@^0.8.2
+37 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/@emotion%2fis-prop-valid 106ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid set size:undefined disposed:false
+40 silly placeDep ROOT @emotion/is-prop-valid@0.8.8 OK for: framer-motion@10.9.1 want: ^0.8.2
+41 verbose stack Error: could not resolve
+41 verbose stack     at PlaceDep.failPeerConflict (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:503:25)
+41 verbose stack     at new PlaceDep (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:157:21)
+41 verbose stack     at #buildDepStep (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:933:18)
+41 verbose stack     at async Arborist.buildIdealTree (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:170:7)
+41 verbose stack     at async Promise.all (index 1)
+41 verbose stack     at async Arborist.reify (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:110:5)
+41 verbose stack     at async Install.exec (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/lib/commands/install.js:152:5)
+41 verbose stack     at async Npm.exec (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/lib/npm.js:209:9)
+41 verbose stack     at async module.exports (/Users/jam/.nvm/versions/node/v24.14.1/lib/node_modules/npm/lib/cli/entry.js:67:5)
+42 error code ERESOLVE
+43 error ERESOLVE could not resolve
+44 error
+45 error While resolving: framer-motion@10.9.1
+45 error Found: react@19.2.4[2m[22m
+45 error [2mnode_modules/react[22m
+45 error   react@"19.2.4" from the root project
+45 error   [95mpeer[39m react@"^17 || ^18 || ^19" from @base-ui/react@1.3.0[2m[22m
+45 error   [2mnode_modules/@base-ui/react[22m
+45 error     @base-ui/react@"^1.3.0" from the root project
+45 error   42 more (@base-ui/utils, @floating-ui/react-dom, ...)
+45 error
+45 error Could not resolve dependency:
+45 error peerOptional react@"^18.0.0" from framer-motion@10.9.1[2m[22m
+45 error [2mnode_modules/framer-motion[22m
+45 error   framer-motion@"10.9.1" from the root project
+45 error
+45 error Conflicting peer dependency: react@18.3.1[2m[22m
+45 error [2mnode_modules/react[22m
+45 error   peerOptional react@"^18.0.0" from framer-motion@10.9.1[2m[22m
+45 error   [2mnode_modules/framer-motion[22m
+45 error     framer-motion@"10.9.1" from the root project
+45 error
+45 error Fix the upstream dependency conflict, or retry
+45 error this command with --force or --legacy-peer-deps
+45 error to accept an incorrect (and potentially broken) dependency resolution.
+46 error
+46 error
+46 error For a full report see:
+46 error /Volumes/Seagate/development/geekatyourspot-r/clearnpm/_logs/2026-03-31T13_00_45_350Z-eresolve-report.txt
+47 silly unfinished npm timer reify 1774962045576
+48 silly unfinished npm timer reify:loadTrees 1774962045576
+49 silly unfinished npm timer idealTree:buildDeps 1774962045690
+50 silly unfinished npm timer idealTree:node_modules/framer-motion 1774962046634
+51 verbose cwd /Volumes/Seagate/development/geekatyourspot-r
+52 verbose os Darwin 25.3.0
+53 verbose node v24.14.1
+54 verbose npm  v11.11.0
+55 notice
+55 notice New [33mminor[39m version of npm available! [33m11.11.0[39m -> [34m11.12.1[39m
+55 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.12.1[39m
+55 notice To update run: [4mnpm install -g npm@11.12.1[24m
+55 notice  { force: true, Symbol(proc-log.meta): true }
+56 verbose exit 1
+57 verbose code 1
+58 error A complete log of this run can be found in: /Volumes/Seagate/development/geekatyourspot-r/clearnpm/_logs/2026-03-31T13_00_45_350Z-debug-0.log
