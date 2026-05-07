@@ -1,4 +1,3 @@
-import type { Department } from "@/lib/types/departments";
 import Link from "next/link";
 import { getDepartmentContent } from "@/services/department.service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,7 +37,6 @@ const departmentIcons: Record<string, IconDefinition> = {
   sales: faShieldHalved,
 };
 export async function UseCasesSection(): Promise<React.JSX.Element> {
-  const departments = await getDepartmentContent();
 
   return (
     <section className="w-full bg-[#0A080D] min-h-screen py-5 hidden lg:block">
