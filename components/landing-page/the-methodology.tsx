@@ -73,7 +73,7 @@ export default function TheMethodologySection() {
                     <div className="min-w-0">
                       <FontAwesomeIcon
                         icon={fa1}
-                        className="w-16 h-16  text-[#023059] inline shadow-text"
+                        className="w-16 h-16  text-[#0C1A26] inline shadow-text"
                       />
                     </div>
                     <div className="min-w-0">
@@ -103,7 +103,7 @@ export default function TheMethodologySection() {
                     <div className="min-w-0">
                       <FontAwesomeIcon
                         icon={fa2}
-                        className="w-16 h-16  text-[#023059] inline shadow-text"
+                        className="w-16 h-16  text-[#0C1A26] inline shadow-text"
                       />
                     </div>
                     <div className="min-w-0">
@@ -133,7 +133,7 @@ export default function TheMethodologySection() {
                     <div className="min-w-0">
                       <FontAwesomeIcon
                         icon={fa3}
-                        className="w-16 h-16  text-[#023059] inline shadow-text"
+                        className="w-16 h-16  text-[#0C1A26] inline shadow-text"
                       />
                     </div>
                     <div className="min-w-0">
@@ -165,7 +165,7 @@ export default function TheMethodologySection() {
                     <div className="min-w-0">
                       <FontAwesomeIcon
                         icon={fa4}
-                        className="w-16 h-16  text-[#023059] inline shadow-text"
+                        className="w-16 h-16  text-[#0C1A26] inline shadow-text"
                       />
                     </div>
                     <div className="min-w-0">
@@ -341,7 +341,7 @@ export default function TheMethodologySection() {
                   <div className="grid grid-cols-[20%_80%]">
                     <FontAwesomeIcon
                       icon={fa1}
-                      className="w-16 h-16  text-[#023059] inline shadow-text pt-2"
+                      className="w-16 h-16  text-[#0C1A26] inline shadow-text pt-2"
                     />
                     <div>
                       <h3 className="text-white font-bold lg:text-lg xl:text-xl shadow-text">
@@ -364,7 +364,7 @@ export default function TheMethodologySection() {
                   <div className="grid grid-cols-[20%_80%]">
                     <FontAwesomeIcon
                       icon={fa2}
-                      className="w-16 h-16  text-[#023059] inline shadow-text pt-2"
+                      className="w-16 h-16  text-[#0C1A26] inline shadow-text pt-2"
                     />
                     <div>
                       <h3 className="text-white font-bold lg:text-lg xl:text-xl shadow-text">
@@ -386,7 +386,7 @@ export default function TheMethodologySection() {
                   <div className="grid grid-cols-[20%_80%]">
                     <FontAwesomeIcon
                       icon={fa3}
-                      className="w-16 h-16  text-[#023059] inline shadow-text pt-2"
+                      className="w-16 h-16  text-[#0C1A26] inline shadow-text pt-2"
                     />
                     <div>
                       <h3 className="text-white font-bold lg:text-lg xl:text-xl shadow-text">
@@ -410,7 +410,7 @@ export default function TheMethodologySection() {
                   <div className="grid grid-cols-[20%_80%]">
                     <FontAwesomeIcon
                       icon={fa4}
-                      className="w-16 h-16  text-[#023059] inline shadow-text pt-2"
+                      className="w-16 h-16  text-[#0C1A26] inline shadow-text pt-2"
                     />
                     <div>
                       <h3 className="text-white font-bold lg:text-lg xl:text-xl shadow-text">
