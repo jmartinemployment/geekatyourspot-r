@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Geist, Geist_Mono, Figtree, Sora } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -54,6 +55,8 @@ const localBusinessSchema = {
   ],
   priceRange: "$$",
 };
+
+const GTM_ID = "GTM-K5CXSQRP";
 
 const sora = Sora({
   display: "swap",
@@ -144,6 +147,7 @@ export default function RootLayout({
         sora.variable,
       )}
     >
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className="min-h-full flex flex-col">
         <JsonLd schema={localBusinessSchema} />
         <Navbar />
